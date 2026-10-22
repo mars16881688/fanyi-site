@@ -306,6 +306,10 @@ kbd {
 .rewrite li span { flex: none; font-size: 12px; color: var(--accent); font-weight: 600; width: 2.5em; }
 html[lang="en"] .rewrite li span { width: 4.6em; }
 html[lang="ja"] .rewrite li span { width: 5.6em; }
+html[lang="ko"] .rewrite li span { width: 4.8em; }
+html[lang="ko"] .hero h1 { font-size: clamp(30px, 3.9vw, 46px); }
+html[lang="ko"] .hero h1 .line { white-space: normal; word-break: keep-all; }
+html[lang="ko"] { word-break: keep-all; }
 
 /* 毛玻璃样例 */
 .glass-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
@@ -396,7 +400,11 @@ html[lang="ja"] .rewrite li span { width: 5.6em; }
   .nav { gap: 16px; height: 56px; }
   .nav-links { display: none; }
   .lang-switch { margin-left: auto; }
-  .lang-switch a { padding: 3px 7px; }
+  .lang-switch a { padding: 3px 6px; }
+  /* Four language labels need the room: the header keeps only the icon. */
+  .nav > .brand span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav { gap: 10px; }
+  .nav .btn-sm { padding: 0 12px; }
   .hero { padding: 40px 0 56px; }
   .lede { font-size: 16px; }
   .hero-actions .btn { flex: 1 1 140px; }
