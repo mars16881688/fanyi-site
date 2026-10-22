@@ -1,9 +1,9 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "url": "https://github.com/mars16881688/fanyi-site/releases/latest",
   "notes": {
-    "zh": "菜单新增「反馈…」，可提交到 GitHub 或发邮件。",
-    "en": "New \"Send Feedback…\" menu item to report bugs or ideas on GitHub or by email.",
-    "ja": "メニューに「フィードバックを送信…」を追加。GitHub またはメールで送信できます。"
+    "zh": "敏感内容守卫：不读密码类应用和页面，像密码、密钥的内容需确认才发送；浏览器选中文字不经剪贴板；新增翻译风格；终端和代码编辑器默认不启用。",
+    "en": "Sensitive-content guard: password apps and pages are never read, and password- or key-like selections need confirmation; browser selections skip the clipboard; new translation style; terminals and code editors are off by default.",
+    "ja": "機密情報ガード：パスワード管理アプリやページは読み取らず、パスワードやキーのような選択は確認後に送信。ブラウザの選択はクリップボードを使いません。翻訳スタイルを追加。ターミナルとコードエディタは既定でオフ。"
   }
 }
