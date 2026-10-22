@@ -340,6 +340,18 @@
           <li>授予辅助功能权限</li>
           <li>自备 OpenAI 兼容 API Key</li>
         </ul>
+        <div class="install" id="install">
+          <h3>安装步骤</h3>
+          <p class="install-sub">拿到压缩包后，照着做一遍就能用。</p>
+          <ol class="install-steps">
+            <li><span class="step-n">1</span><div><h4>拖进「应用程序」</h4><p>解压后把 <b>Suiyi.app</b> 拖进「应用程序」文件夹，双击打开。</p></div></li>
+            <li><span class="step-n">2</span><div><h4>允许打开</h4><p>系统提示「无法验证开发者」时，打开 <b>系统设置 › 隐私与安全性</b>，滚动到底部点「仍要打开」，再确认一次。只需做一次。</p></div></li>
+            <li><span class="step-n">3</span><div><h4>授予辅助功能权限</h4><p>按提示打开 <b>系统设置 › 隐私与安全性 › 辅助功能</b> 里的「随译」，然后退出随译再打开一次。</p></div></li>
+            <li><span class="step-n">4</span><div><h4>填写 API Key</h4><p>点菜单栏的随译图标 › 设置…，填写 API Key（任意 OpenAI 兼容接口，默认 DeepSeek），点「测试连接」，再点「保存」。</p></div></li>
+            <li><span class="step-n">5</span><div><h4>选择我的语言</h4><p>在设置里选「我的语言」。之后在任何 App 里选中文字，点旁边的小按钮即可翻译；<kbd>⌥⌘T</kbd> 翻译，<kbd>⌥⌘R</kbd> 改写。</p></div></li>
+          </ol>
+          <p class="install-fallback">第 2 步找不到「仍要打开」？在「终端」运行：<br><code>xattr -dr com.apple.quarantine /Applications/Suiyi.app</code></p>
+        </div>
       </div>
     </section>
   </main>
