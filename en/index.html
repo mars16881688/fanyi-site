@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
+  <title>Suiyi — Translate anything on your Mac · Chinese, English, Japanese</title>
+  <meta name="description" content="Suiyi is a menu bar translator for Mac. Translate between Chinese, English and Japanese wherever you select text, and reply in your own language — it goes out in the sender's. No telemetry.">
+  <link rel="alternate" hreflang="zh-CN" href="https://mars16881688.github.io/fanyi-site/">
+  <link rel="alternate" hreflang="en" href="https://mars16881688.github.io/fanyi-site/en/">
+  <link rel="alternate" hreflang="ja" href="https://mars16881688.github.io/fanyi-site/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://mars16881688.github.io/fanyi-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Suiyi — Translate anything on your Mac">
+  <meta property="og:description" content="Chinese, English and Japanese, any pair. Read and reply in your own language. Native macOS, no telemetry.">
+  <meta property="og:url" content="https://mars16881688.github.io/fanyi-site/en/">
+  <meta property="og:image" content="https://mars16881688.github.io/fanyi-site/assets/icon-512.png">
+  <link rel="icon" type="image/png" href="../assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="#top"><img src="../assets/favicon-64.png" width="28" height="28" alt=""><span>Suiyi</span></a>
+      <div class="nav-links">
+        <a href="#languages">Languages</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="lang-switch" aria-label="Language">
+        <a href="../" lang="zh-CN" data-lang="zh">中文</a>
+        <a href="./" lang="en" data-lang="en" aria-current="page">EN</a>
+        <a href="../ja/" lang="ja" data-lang="ja">日本語</a>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#get">Get it</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mac translator · Chinese, English, Japanese</p>
+          <h1 id="hero-title"><span class="line">Any language.</span><span class="line">Your own words.</span></h1>
+          <p class="lede">Select any text and understand it in place. Get a message in Chinese or Japanese, write your reply in English, and Suiyi sends it back in their language — still sounding like you.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#get">Get Suiyi</a>
+            <a class="btn btn-ghost" href="#languages">See how it works</a>
+          </div>
+          <ul class="hero-meta" aria-label="At a glance">
+            <li>macOS 13+</li>
+            <li>中文 · English · 日本語</li>
+            <li>No telemetry</li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="mac" id="demo" data-stage="4" role="img"
+               data-status="Demo" data-static="Illustration" data-pause="Pause" data-play="Play"
+               data-pause-label="Pause the demo" data-play-label="Play the demo"
+               data-stages="Before selecting|Japanese text selected|Suiyi button appears|Translated with context|Done"
+               aria-label="Illustration: in Slack, a Japanese message is selected, the Suiyi button appears and a frosted-glass card translates it, using the #release channel as context, into: Let's ship on Friday and keep the changelog short.">
+            <div class="mac-bar" aria-hidden="true">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mac-title">Slack — #release</span>
+            </div>
+            <div class="mac-body" aria-hidden="true">
+              <div class="msg">
+                <span class="avatar a1">A</span>
+                <div><p class="msg-name">Alex <time>10:42</time></p><p>QA signed off on build 2.4.</p></div>
+              </div>
+              <div class="msg">
+                <span class="avatar a3">K</span>
+                <div><p class="msg-name">Ken <time>10:44</time></p><p><mark class="sel" lang="ja">金曜日にリリースして、変更履歴は短めにしましょう。</mark></p></div>
+              </div>
+              <div class="msg msg-faint">
+                <span class="avatar a2">陈</span>
+                <div><p class="msg-name">陈 <time>10:45</time></p><p lang="zh-CN">好的，我来写更新说明。</p></div>
+              </div>
+
+              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span><span>Translate</span><span class="pill-sep"></span><span>Rewrite</span></div>
+
+              <div class="pop">
+                <div class="pop-head">
+                  <span class="pop-brand"><img src="../assets/favicon-64.png" width="16" height="16" alt="">日本語 → EN</span>
+                  <span class="pop-ctx">Context: Slack · #release</span>
+                </div>
+                <p class="pop-src" lang="ja">金曜日にリリースして、変更履歴は短めにしましょう。</p>
+                <p class="pop-out"><span id="demo-text">Let's ship on Friday and keep the changelog short.</span><span class="caret"></span></p>
+                <div class="pop-actions"><span>Copy translation</span><span class="pop-reply">Reply in English</span></div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="demo-bar">
+            <span class="demo-status" id="demo-status">Demo</span>
+            <button class="demo-toggle" id="demo-toggle" type="button" hidden>Pause</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="section" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Three languages</p>
+          <h2 id="languages-title">Chinese, English, Japanese. Any pair.</h2>
+          <p class="section-sub">Everyone picks “My language” in Settings. Foreign text is translated into yours; your reply goes back in the sender's.</p>
+        </div>
+        <ul class="people">
+          <li class="person">
+            <div class="person-head"><span class="avatar a2">陈</span><div><p class="person-name">Chen</p><p class="person-lang">My language: 中文</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">Gets · EN</span><span class="v">Can we ship on Friday?</span></li>
+              <li><span class="k">Sees</span><span class="v" lang="zh-CN">周五能上线吗？</span></li>
+              <li class="mine"><span class="k">Writes</span><span class="v" lang="zh-CN">可以，周五没问题。</span></li>
+              <li class="out"><span class="k">Sends · EN</span><span class="v">Yes, Friday works.</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a1">E</span><div><p class="person-name">Emma</p><p class="person-lang">My language: English</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">Gets · 日本語</span><span class="v" lang="ja">資料は明日までに送ります。</span></li>
+              <li><span class="k">Sees</span><span class="v">I'll send the materials by tomorrow.</span></li>
+              <li class="mine"><span class="k">Writes</span><span class="v">Thanks, no rush.</span></li>
+              <li class="out"><span class="k">Sends · 日本語</span><span class="v" lang="ja">ありがとうございます。急ぎませんので。</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a3">K</span><div><p class="person-name">Ken</p><p class="person-lang">My language: 日本語</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">Gets · 中文</span><span class="v" lang="zh-CN">下周一的评审改到下午三点。</span></li>
+              <li><span class="k">Sees</span><span class="v" lang="ja">来週月曜のレビューは午後3時に変更です。</span></li>
+              <li class="mine"><span class="k">Writes</span><span class="v" lang="ja">了解です、参加します。</span></li>
+              <li class="out"><span class="k">Sends · 中文</span><span class="v" lang="zh-CN">收到，我会参加。</span></li>
+            </ol>
+          </li>
+        </ul>
+        <p class="fineprint">When the selection is already in your language, it goes into your “usual outgoing language” — handy for turning an email you wrote into Japanese in one step. The app's interface follows your system language too: Simplified Chinese, English or Japanese.</p>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section-alt" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why</p>
+          <h2 id="why-title">Replying to a foreign-language message:<br>seven steps before, three now.</h2>
+        </div>
+        <div class="compare">
+          <div class="compare-col compare-before">
+            <h3>Before</h3>
+            <ol>
+              <li>Copy the message</li>
+              <li>Switch to a translator and paste</li>
+              <li>Read it, think of a reply</li>
+              <li>Write the reply</li>
+              <li>Paste it back to translate</li>
+              <li>Fix the awkward tone</li>
+              <li>Copy it back and send</li>
+            </ol>
+          </div>
+          <div class="compare-col compare-after">
+            <h3>With Suiyi</h3>
+            <ol>
+              <li>Select the message, read the translation</li>
+              <li>Write in your language, press <kbd>⌘↩</kbd></li>
+              <li>Copy and send</li>
+            </ol>
+            <p class="compare-note">Without leaving the window you're in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">Understand, reply, sound like yourself.</h2>
+        </div>
+
+        <!-- Reply -->
+        <article class="feature feature-wide">
+          <div class="feature-text">
+            <p class="tag">One-step reply</p>
+            <h3>They write in theirs, you write in yours.</h3>
+            <p>The message is translated into your language. Write your reply, press <kbd>⌘↩</kbd>, and it comes out in the sender's language: Chinese back to Chinese, Japanese back to Japanese.</p>
+          </div>
+          <div class="reply-flow" aria-label="One-step reply example">
+            <div class="rf-row"><span class="rf-lang">中</span><p><span class="rf-label">They wrote</span><span lang="zh-CN">周四之前能把方案发我吗？</span></p></div>
+            <div class="rf-row"><span class="rf-lang">EN</span><p><span class="rf-label">You see</span>Can you send me the proposal before Thursday?</p></div>
+            <div class="rf-row rf-me"><span class="rf-lang">EN</span><p><span class="rf-label">You write</span>Sure, you'll have it by Wednesday evening.</p></div>
+            <div class="rf-row rf-out"><span class="rf-lang">中</span><p><span class="rf-label">Sent</span><span lang="zh-CN">没问题，周三晚上前发给你。</span></p></div>
+          </div>
+        </article>
+
+        <div class="feature-grid">
+          <!-- Context -->
+          <article class="feature">
+            <p class="tag">Understands context</p>
+            <h3>Same words, right meaning.</h3>
+            <p>Suiyi looks at the current app, the window title and the text around your selection. Terminal errors, casual chat and polite email each get the right tone.</p>
+            <div class="ctx" aria-label="Context example">
+              <p class="ctx-src">ship it Friday</p>
+              <div class="ctx-row"><span class="ctx-chip">No context</span><span class="ctx-bad" lang="ja">金曜日に発送する</span></div>
+              <div class="ctx-row"><span class="ctx-chip ctx-on">Slack · #release</span><span class="ctx-good" lang="ja">金曜日にリリースする</span></div>
+            </div>
+          </article>
+
+          <!-- Rewrite -->
+          <article class="feature">
+            <p class="tag">Rewrite</p>
+            <h3>One sentence, three tones.</h3>
+            <p>Select text and click Rewrite or press <kbd>⌥⌘R</kbd> for three versions in the same language — Chinese, English or Japanese. Replace the original in one click when it's editable.</p>
+            <p class="rw-src">I just wanted to check in and see how things are going with this.</p>
+            <ul class="rewrite" aria-label="Three rewritten versions">
+              <li><span>Concise</span>Any update on this?</li>
+              <li><span>Formal</span>Could you share the current status?</li>
+              <li><span>Casual</span>How's this going?</li>
+            </ul>
+          </article>
+
+          <!-- Style -->
+          <article class="feature">
+            <p class="tag">Sounds like you <span class="badge">Off by default</span></p>
+            <h3>Replies in your voice, in any language.</h3>
+            <p>Turn it on and Suiyi builds a style profile from your history, so replies match your usual tone and length. The files stay on your Mac.</p>
+            <div class="files" aria-label="Local files">
+              <code>~/.suiyi/history.jsonl</code>
+              <code>~/.suiyi/profile.md</code>
+            </div>
+            <p class="agents-note">Codex and Claude Code can read the same profile, so they write like you too.</p>
+            <div class="agents"><span>Codex</span><span>Claude Code</span></div>
+          </article>
+
+          <!-- Native -->
+          <article class="feature">
+            <p class="tag">Native macOS</p>
+            <h3>Feels built in.</h3>
+            <p>Lives in the menu bar, no Dock icon. The card uses the system's frosted glass and follows light and dark mode; the interface follows your system language. Press Esc or click away to dismiss.</p>
+            <div class="glass-duo" aria-hidden="true">
+              <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
+              <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
+            </div>
+            <ul class="keys" aria-label="Shortcuts">
+              <li><kbd>⌥⌘T</kbd> Translate</li>
+              <li><kbd>⌥⌘R</kbd> Rewrite</li>
+              <li><kbd>⌘↩</kbd> Send reply</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Privacy</p>
+          <h2 id="privacy-title">Your text goes only where you send it.</h2>
+          <p class="section-sub">Suiyi has no servers of its own. Requests go only to the model API you configure.</p>
+        </div>
+        <ul class="privacy">
+          <li><h3>No telemetry</h3><p>No analytics of any kind. Selected text isn't written to disk by default.</p></li>
+          <li><h3>Key in Keychain</h3><p>Your API key lives in the macOS Keychain. You choose the endpoint and model.</p></li>
+          <li><h3>Fully local if you like</h3><p>Point it at a local Ollama and nothing leaves your Mac.</p></li>
+          <li><h3>Stays out of sensitive fields</h3><p>Never triggers in password fields or Secure Input, and you can exclude apps.</p></li>
+        </ul>
+        <p class="fineprint">To be precise: when translating, the selected text, the app name, the window title and nearby text are sent to your configured API. If an app doesn't expose the selection, Suiyi reads the clipboard once and restores it right away. With “Sounds like you” on, your style profile is sent along with replies. “Check for Updates” reads a version file from this site only when you click it.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Before you start.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Which languages are supported?</summary>
+            <p>Any pair of Chinese, English and Japanese. Pick “My language” in Settings: foreign text goes into your language, your language goes into your “usual outgoing language”, and replies go back in the sender's language. Other languages such as Korean or French can be translated into your language too.</p>
+          </details>
+          <details>
+            <summary>What language is the interface in?</summary>
+            <p>It follows your macOS language: Simplified Chinese, English or Japanese. Other system languages show English.</p>
+          </details>
+          <details>
+            <summary>Do I need my own API key?</summary>
+            <p>Yes. Any OpenAI-compatible API works — DeepSeek by default, or OpenAI, OpenRouter, or a local Ollama. Usage is billed by your provider.</p>
+          </details>
+          <details>
+            <summary>Why does it need Accessibility access?</summary>
+            <p>Reading your selection and replacing it with a rewrite both require this macOS permission. Suiyi can't work without it.</p>
+          </details>
+          <details>
+            <summary>Is my text stored?</summary>
+            <p>Not by default. Only when you turn on “Sounds like you” are history and the style profile kept on your Mac in <code>~/.suiyi</code>, and you can delete them any time.</p>
+          </details>
+          <details>
+            <summary>Which apps does it work in?</summary>
+            <p>Most apps where you can select text: browsers, Slack, Teams, Mail, terminals and more. You can exclude apps in Settings.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get -->
+    <section class="section section-alt get" id="get" aria-labelledby="get-title">
+      <div class="container get-inner">
+        <img class="get-icon" src="../assets/icon-512.png" width="80" height="80" alt="Suiyi app icon">
+        <h2 id="get-title">Get Suiyi</h2>
+        <p class="section-sub">Suiyi is in a small private trial and not publicly available yet. To try it, email the author.</p>
+        <a class="btn btn-primary get-mail" href="mailto:mars.yahui@gmail.com?subject=Suiyi%20trial">mars.yahui@gmail.com</a>
+        <ul class="reqs" aria-label="Requirements">
+          <li>macOS 13 or later</li>
+          <li>Accessibility access</li>
+          <li>An OpenAI-compatible API key</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand brand-sm"><img src="../assets/favicon-64.png" width="20" height="20" alt="">Suiyi</span>
+      <span>Native macOS · Chinese, English, Japanese · No telemetry</span>
+    </div>
+  </footer>
+</body>
+</html>
