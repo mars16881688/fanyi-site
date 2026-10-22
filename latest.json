@@ -1,9 +1,9 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "url": "https://github.com/mars16881688/fanyi-site/releases/latest",
   "notes": {
-    "zh": "点一下直接翻译，改写改为 tab；回复卡片按钮调整；回复翻译参考对方原话。",
-    "en": "One click translates and Rewrite is a tab; a cleaner reply card; replies use the original message as context.",
-    "ja": "ワンクリックで翻訳、書き換えはタブに。返信カードを整理し、返信は相手のメッセージを文脈として翻訳。"
+    "zh": "菜单新增「反馈…」，可提交到 GitHub 或发邮件。",
+    "en": "New \"Send Feedback…\" menu item to report bugs or ideas on GitHub or by email.",
+    "ja": "メニューに「フィードバックを送信…」を追加。GitHub またはメールで送信できます。"
   }
 }
