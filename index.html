@@ -41,7 +41,7 @@
         <div class="hero-copy">
           <p class="eyebrow">macOS 菜单栏划词翻译</p>
           <h1 id="hero-title"><span class="line">选中就懂。</span><span class="line">中文写，英文发。</span></h1>
-          <p class="lede">选中任意文字，Fanyi 结合上下文就地翻译或改写。收到英文消息，用中文回复，一键译成地道英文。</p>
+          <p class="lede">在任何 App 里选中文字，旁边出现一个小按钮，点一下就翻译或改写。收到英文消息，用中文写回复，Fanyi 译成地道英文。</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#get">获取 Fanyi</a>
             <a class="btn btn-ghost" href="#how">看看怎么用</a>
@@ -82,7 +82,7 @@
                 </div>
                 <p class="pop-src">Let's ship it Friday and keep the changelog short.</p>
                 <p class="pop-out"><span id="demo-text">周五上线吧，更新日志写短一点。</span><span class="caret"></span></p>
-                <div class="pop-actions"><span>复制</span><span>改写</span><span class="pop-reply">回复 ⌘↩</span></div>
+                <div class="pop-actions"><span>复制</span><span class="pop-reply">用中文回复</span></div>
               </div>
             </div>
           </div>
@@ -102,10 +102,10 @@
           <h2 id="how-title">不切窗口，四步说清楚。</h2>
         </div>
         <ol class="steps">
-          <li><span class="step-n">01</span><h3>选中</h3><p>在任何 App 里选中文字，旁边出现一个小按钮。</p></li>
-          <li><span class="step-n">02</span><h3>翻译</h3><p>中英自动互译，结合上下文。<kbd>⌥⌘T</kbd></p></li>
-          <li><span class="step-n">03</span><h3>回复</h3><p>用中文写回复，<kbd>⌘↩</kbd> 生成英文。</p></li>
-          <li><span class="step-n">04</span><h3>按你的风格写</h3><p>可选。参考你过往的语气和长度。</p></li>
+          <li><span class="step-n">01</span><h3>选中</h3><p>拖选或双击文字，鼠标旁出现小圆按钮。不用就自动消失。</p></li>
+          <li><span class="step-n">02</span><h3>翻译</h3><p>中文译成英文，其他语言译成中文。也可直接按 <kbd>⌥⌘T</kbd>。</p></li>
+          <li><span class="step-n">03</span><h3>回复</h3><p>看懂之后，用中文写回复，<kbd>⌘↩</kbd> 生成英文。</p></li>
+          <li><span class="step-n">04</span><h3>按你的风格写</h3><p>可选，默认关闭。英文回复贴近你平时的语气和长度。</p></li>
         </ol>
       </div>
     </section>
@@ -115,7 +115,7 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">功能</p>
-          <h2 id="features-title">少即是多，但该有的都在。</h2>
+          <h2 id="features-title">翻译、改写、回复，一张卡片。</h2>
         </div>
 
         <!-- 一键回复 -->
@@ -138,7 +138,7 @@
           <article class="feature">
             <p class="tag">理解上下文</p>
             <h3>同一个词，按场景译。</h3>
-            <p>翻译时参考当前 App、窗口标题和选中文字前后的内容。</p>
+            <p>翻译时参考当前 App、窗口标题和选中文字前后的内容。终端里的报错、聊天里的口语、邮件里的客套，各按各的译。</p>
             <div class="ctx" aria-label="上下文翻译示例">
               <p class="ctx-src">ship it Friday</p>
               <div class="ctx-row"><span class="ctx-chip">无上下文</span><span class="ctx-bad">周五把它运走</span></div>
@@ -150,7 +150,7 @@
           <article class="feature">
             <p class="tag">改写</p>
             <h3>一句话，三种口吻。</h3>
-            <p>选中后按 <kbd>⌥⌘R</kbd>，同时给出三个版本，可复制，也可直接替换原文。</p>
+            <p>选中后点「改写」或按 <kbd>⌥⌘R</kbd>，同语言给出三个版本。原文可编辑时，一键替换。</p>
             <p class="rw-src">我想问一下这个事情现在进展怎么样了。</p>
             <ul class="rewrite" aria-label="三个改写版本">
               <li><span>简洁</span>这件事进展如何？</li>
@@ -163,7 +163,7 @@
           <article class="feature">
             <p class="tag">毛玻璃弹窗</p>
             <h3>像系统自带的一样。</h3>
-            <p>原生毛玻璃材质，跟随系统浅色、深色。不抢眼，不挡内容。</p>
+            <p>用系统原生的毛玻璃材质，自动跟随浅色、深色。卡片可拖动，按 Esc 或点外面就收起。</p>
             <div class="glass-duo" aria-hidden="true">
               <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
               <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
@@ -174,7 +174,7 @@
           <article class="feature">
             <p class="tag">个人风格 <span class="badge">默认关闭</span></p>
             <h3>回复像你写的。</h3>
-            <p>开启后，历史和风格档案只存在本机，回复时参考你的语气。Codex 和 Claude Code 也能读取。</p>
+            <p>主动开启后，历史和风格档案只存在本机 <code>~/.fanyi</code>。回复时参考你的语气；Codex 和 Claude Code 也能读取，代你写作时更像你。</p>
             <div class="files" aria-label="本机文件">
               <code>~/.fanyi/history.jsonl</code>
               <code>~/.fanyi/profile.md</code>
@@ -194,12 +194,12 @@
           <p class="section-sub">Fanyi 没有服务器。请求只发往你自己配置的接口。</p>
         </div>
         <ul class="privacy">
-          <li><h3>无遥测</h3><p>不收集任何统计数据，不记录键盘、屏幕或剪贴板。</p></li>
+          <li><h3>无遥测</h3><p>不收集任何统计数据。默认不把选中文字写入磁盘。</p></li>
           <li><h3>Key 在钥匙串</h3><p>API Key 存在 macOS 钥匙串，接口和模型由你决定。</p></li>
           <li><h3>用你的接口</h3><p>任意 OpenAI 兼容接口，默认 DeepSeek。也可接本地 Ollama。</p></li>
-          <li><h3>敏感处不触发</h3><p>密码框和安全输入状态下不弹出。</p></li>
+          <li><h3>敏感处不触发</h3><p>密码框、安全输入状态下不弹出；也可按 App 排除。</p></li>
         </ul>
-        <p class="fineprint">翻译时，选中文字和少量上下文会发送到你配置的接口。开启个人风格后，风格档案会随回复请求一起发送。</p>
+        <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。部分 App 不提供选中文字时，Fanyi 会临时读取一次剪贴板，随即恢复原内容。开启个人风格后，风格档案会随回复请求一起发送。</p>
       </div>
     </section>
 
