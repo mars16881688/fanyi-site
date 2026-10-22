@@ -1,12 +1,12 @@
 {
-  "version": "0.2.5",
-  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.5",
-  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.5/Suiyi.zip",
-  "sha256": "0ec48b7e80c41ef9f312343d8bd7911ac1cb5bdc86939ccc00665765961aab8d",
+  "version": "0.2.6",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.6",
+  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.6/Suiyi.zip",
+  "sha256": "7c7daddb4178b76b8ba4b4c357a6363aa87e6f9f7220874328b0f896dce78855",
   "notes": {
-    "zh": "应用内一键更新；新增每天自动检查更新（可在设置里关闭）。",
-    "en": "One-click updates in the app, plus a daily automatic update check (can be turned off in Settings).",
-    "ja": "アプリ内でワンクリック更新。毎日のアップデート自動確認を追加（設定でオフにできます）。",
-    "ko": "앱에서 한 번에 업데이트하고, 매일 업데이트를 자동으로 확인합니다(설정에서 끌 수 있음)."
+    "zh": "回复参考对方原文和所在应用，更像你自己写的；选区按钮右键可复制原文；设置保存后自动关闭。感谢 Kimi 贡献。",
+    "en": "Replies use the whole message and the app you're in, so they read like you wrote them; right-click the selection button to copy; Settings close after saving. Thanks to Kimi.",
+    "ja": "返信は相手のメッセージ全文とアプリに合わせ、より自分らしく；選択ボタンの右クリックでコピー；設定は保存後に自動で閉じます。Kimi さんに感謝。",
+    "ko": "답장이 상대 메시지 전체와 사용 중인 앱을 참고해 더 내가 쓴 것처럼; 선택 버튼 오른쪽 클릭으로 복사; 설정은 저장 후 자동으로 닫힙니다. Kimi 님께 감사합니다."
   }
 }
