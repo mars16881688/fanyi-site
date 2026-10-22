@@ -3,15 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // 首次访问按浏览器语言跳转；手动选过语言后不再跳转。
+    (function () {
+      try {
+        if (localStorage.getItem('suiyi-lang')) return;
+        var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
+        if (!lang || lang.indexOf('zh') === 0) return;
+        location.replace(lang.indexOf('ja') === 0 ? 'ja/' : 'en/');
+      } catch (e) {}
+    })();
+  </script>
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
-  <title>随译 — Mac 全局翻译助手</title>
-  <meta name="description" content="随译是 Mac 全局翻译助手，住在菜单栏。选中任何文字就地看懂；收到英文消息，用中文写回复，译成地道英文，语气像你。无遥测，API Key 存于钥匙串。">
+  <title>随译 — Mac 全局翻译助手，中英日互译</title>
+  <meta name="description" content="随译是 Mac 全局翻译助手，住在菜单栏。中英日任意两两互译：选中任何文字就地看懂；收到外语消息，用母语写回复，译回对方的语言，语气像你。无遥测。">
+  <link rel="alternate" hreflang="zh-CN" href="https://mars16881688.github.io/fanyi-site/">
+  <link rel="alternate" hreflang="en" href="https://mars16881688.github.io/fanyi-site/en/">
+  <link rel="alternate" hreflang="ja" href="https://mars16881688.github.io/fanyi-site/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://mars16881688.github.io/fanyi-site/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:title" content="随译 — Mac 全局翻译助手">
-  <meta property="og:description" content="选中就懂，中文写、英文发，语气像你。原生 macOS，无遥测。">
+  <meta property="og:description" content="中英日两两互译。用母语读，用母语回，语气像你。原生 macOS，无遥测。">
   <meta property="og:url" content="https://mars16881688.github.io/fanyi-site/">
   <meta property="og:image" content="https://mars16881688.github.io/fanyi-site/assets/icon-512.png">
   <link rel="icon" type="image/png" href="assets/favicon-64.png">
@@ -26,10 +41,15 @@
     <nav class="container nav" aria-label="主导航">
       <a class="brand" href="#top"><img src="assets/favicon-64.png" width="28" height="28" alt=""><span>随译</span></a>
       <div class="nav-links">
-        <a href="#why">为什么</a>
+        <a href="#languages">三语</a>
         <a href="#features">功能</a>
         <a href="#privacy">隐私</a>
         <a href="#faq">问答</a>
+      </div>
+      <div class="lang-switch" aria-label="语言">
+        <a href="./" lang="zh-CN" data-lang="zh" aria-current="page">中文</a>
+        <a href="en/" lang="en" data-lang="en">EN</a>
+        <a href="ja/" lang="ja" data-lang="ja">日本語</a>
       </div>
       <a class="btn btn-primary btn-sm" href="#get">获取</a>
     </nav>
@@ -40,22 +60,26 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Mac 全局翻译助手</p>
-          <h1 id="hero-title"><span class="line">英文的工作，</span><span class="line">用中文完成。</span></h1>
-          <p class="lede">选中任何文字，就地看懂。收到英文消息，用中文写回复，自动变成地道英文，语气还像你。</p>
+          <p class="eyebrow">Mac 全局翻译助手 · 中英日互译</p>
+          <h1 id="hero-title"><span class="line">外语的工作，</span><span class="line">用母语完成。</span></h1>
+          <p class="lede">选中任何文字，就地看懂。收到英文或日文消息，用中文写回复，随译译回对方的语言，语气还像你。</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#get">获取随译</a>
-            <a class="btn btn-ghost" href="#why">看看差在哪</a>
+            <a class="btn btn-ghost" href="#languages">看看怎么互译</a>
           </div>
           <ul class="hero-meta" aria-label="基本信息">
             <li>macOS 13+</li>
-            <li>原生 Swift</li>
+            <li>中文 · English · 日本語</li>
             <li>无遥测</li>
           </ul>
         </div>
 
         <figure class="hero-visual">
-          <div class="mac" id="demo" data-stage="4" role="img" aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现随译按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
+          <div class="mac" id="demo" data-stage="4" role="img"
+               data-status="示意动画" data-static="示意图" data-pause="暂停" data-play="播放"
+               data-pause-label="暂停示意动画" data-play-label="播放示意动画"
+               data-stages="选中前|选中英文句子|出现随译按钮|结合上下文翻译|完成"
+               aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现随译按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
             <div class="mac-bar" aria-hidden="true">
               <span class="lights"><i></i><i></i><i></i></span>
               <span class="mac-title">Slack — #release</span>
@@ -70,20 +94,20 @@
                 <div><p class="msg-name">Jordan <time>10:44</time></p><p><mark class="sel">Let's ship it Friday and keep the changelog short.</mark></p></div>
               </div>
               <div class="msg msg-faint">
-                <span class="avatar a3">M</span>
-                <div><p class="msg-name">Mei <time>10:45</time></p><p>Sounds good. I'll draft the notes.</p></div>
+                <span class="avatar a3">K</span>
+                <div><p class="msg-name">Ken <time>10:45</time></p><p>了解です。リリースノートを書きます。</p></div>
               </div>
 
-              <div class="pill"><span class="pill-mark">译</span><span>翻译</span><span class="pill-sep"></span><span>改写</span></div>
+              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span><span>翻译</span><span class="pill-sep"></span><span>改写</span></div>
 
               <div class="pop">
                 <div class="pop-head">
-                  <span class="pop-brand"><img src="assets/favicon-64.png" width="16" height="16" alt="">翻译</span>
+                  <span class="pop-brand"><img src="assets/favicon-64.png" width="16" height="16" alt="">EN → 中文</span>
                   <span class="pop-ctx">参考：Slack · #release</span>
                 </div>
                 <p class="pop-src">Let's ship it Friday and keep the changelog short.</p>
                 <p class="pop-out"><span id="demo-text">周五上线吧，更新日志写短一点。</span><span class="caret"></span></p>
-                <div class="pop-actions"><span>复制</span><span class="pop-reply">用中文回复</span></div>
+                <div class="pop-actions"><span>复制译文</span><span class="pop-reply">用中文回复</span></div>
               </div>
             </div>
           </div>
@@ -95,12 +119,53 @@
       </div>
     </section>
 
+    <!-- 三语 -->
+    <section class="section" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">三种语言</p>
+          <h2 id="languages-title">中英日，两两互译。</h2>
+          <p class="section-sub">每个人在设置里选「我的语言」。外语一律译成你的语言；回复时，再译回对方的语言。</p>
+        </div>
+        <ul class="people">
+          <li class="person">
+            <div class="person-head"><span class="avatar a2">陈</span><div><p class="person-name">陈</p><p class="person-lang">我的语言：中文</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">收到 · EN</span><span class="v" lang="en">Can we ship on Friday?</span></li>
+              <li><span class="k">看到</span><span class="v">周五能上线吗？</span></li>
+              <li class="mine"><span class="k">我写</span><span class="v">可以，周五没问题。</span></li>
+              <li class="out"><span class="k">发出 · EN</span><span class="v" lang="en">Yes, Friday works.</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a1">E</span><div><p class="person-name">Emma</p><p class="person-lang">我的语言：English</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">收到 · 日本語</span><span class="v" lang="ja">資料は明日までに送ります。</span></li>
+              <li><span class="k">看到</span><span class="v" lang="en">I'll send the materials by tomorrow.</span></li>
+              <li class="mine"><span class="k">我写</span><span class="v" lang="en">Thanks, no rush.</span></li>
+              <li class="out"><span class="k">发出 · 日本語</span><span class="v" lang="ja">ありがとうございます。急ぎませんので。</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a3">K</span><div><p class="person-name">Ken</p><p class="person-lang">我的语言：日本語</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">收到 · 中文</span><span class="v">下周一的评审改到下午三点。</span></li>
+              <li><span class="k">看到</span><span class="v" lang="ja">来週月曜のレビューは午後3時に変更です。</span></li>
+              <li class="mine"><span class="k">我写</span><span class="v" lang="ja">了解です、参加します。</span></li>
+              <li class="out"><span class="k">发出 · 中文</span><span class="v">收到，我会参加。</span></li>
+            </ol>
+          </li>
+        </ul>
+        <p class="fineprint">选中的已经是你的语言时，译成你的「常用对外语言」，比如中文写好的邮件一键译成英文。界面同样跟随系统，支持简体中文、English、日本語。</p>
+      </div>
+    </section>
+
     <!-- 为什么：前后对比 -->
-    <section class="section" id="why" aria-labelledby="why-title">
+    <section class="section section-alt" id="why" aria-labelledby="why-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">为什么</p>
-          <h2 id="why-title">回一条英文消息，<br>以前七步，现在三步。</h2>
+          <h2 id="why-title">回一条外语消息，<br>以前七步，现在三步。</h2>
         </div>
         <div class="compare">
           <div class="compare-col compare-before">
@@ -110,7 +175,7 @@
               <li>切到翻译网页，粘贴</li>
               <li>读译文，想怎么回</li>
               <li>写好中文</li>
-              <li>再贴进去译成英文</li>
+              <li>再贴进去译成对方的语言</li>
               <li>改掉生硬的语气</li>
               <li>复制回去，发送</li>
             </ol>
@@ -119,7 +184,7 @@
             <h3>用随译</h3>
             <ol>
               <li>选中原文，读译文</li>
-              <li>写中文回复，按 <kbd>⌘↩</kbd></li>
+              <li>用中文写回复，按 <kbd>⌘↩</kbd></li>
               <li>复制，发送</li>
             </ol>
             <p class="compare-note">全程不离开当前窗口。</p>
@@ -129,7 +194,7 @@
     </section>
 
     <!-- 功能 -->
-    <section class="section section-alt" id="features" aria-labelledby="features-title">
+    <section class="section" id="features" aria-labelledby="features-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">功能</p>
@@ -140,14 +205,14 @@
         <article class="feature feature-wide">
           <div class="feature-text">
             <p class="tag">一键回复</p>
-            <h3>对方写英文，你写中文。</h3>
-            <p>英文消息先译成中文。你用中文写回复，按 <kbd>⌘↩</kbd>，转成英文，复制即发。</p>
+            <h3>对方写外语，你写中文。</h3>
+            <p>外语消息先译成中文。你用中文写回复，按 <kbd>⌘↩</kbd>，译回对方的语言：英文消息回英文，日文消息回日文。</p>
           </div>
           <div class="reply-flow" aria-label="一键回复流程示例">
-            <div class="rf-row"><span class="rf-lang">EN</span><p><span class="rf-label">对方</span>Can you send the deck before Thursday?</p></div>
-            <div class="rf-row"><span class="rf-lang">中</span><p><span class="rf-label">译文</span>你能在周四前把演示文稿发过来吗？</p></div>
-            <div class="rf-row rf-me"><span class="rf-lang">中</span><p><span class="rf-label">我写</span>可以，周三下班前发你。</p></div>
-            <div class="rf-row rf-out"><span class="rf-lang">EN</span><p><span class="rf-label">发出</span>Sure, I'll send it over by end of day Wednesday.</p></div>
+            <div class="rf-row"><span class="rf-lang">JA</span><p><span class="rf-label">对方</span><span lang="ja">明日の打ち合わせ、15時からに変更できますか？</span></p></div>
+            <div class="rf-row"><span class="rf-lang">中</span><p><span class="rf-label">译文</span>明天的会可以改到下午三点吗？</p></div>
+            <div class="rf-row rf-me"><span class="rf-lang">中</span><p><span class="rf-label">我写</span>可以，三点见。</p></div>
+            <div class="rf-row rf-out"><span class="rf-lang">JA</span><p><span class="rf-label">发出</span><span lang="ja">大丈夫です。15時にお会いしましょう。</span></p></div>
           </div>
         </article>
 
@@ -168,7 +233,7 @@
           <article class="feature">
             <p class="tag">改写</p>
             <h3>一句话，三种口吻。</h3>
-            <p>选中后点「改写」或按 <kbd>⌥⌘R</kbd>，同语言给出三个版本。原文可编辑时，一键替换。</p>
+            <p>选中后点「改写」或按 <kbd>⌥⌘R</kbd>，同语言给出三个版本，中英日都行。原文可编辑时，一键替换。</p>
             <p class="rw-src">我想问一下这个事情现在进展怎么样了。</p>
             <ul class="rewrite" aria-label="三个改写版本">
               <li><span>简洁</span>这件事进展如何？</li>
@@ -180,8 +245,8 @@
           <!-- 个人风格 -->
           <article class="feature">
             <p class="tag">像你写的 <span class="badge">默认关闭</span></p>
-            <h3>英文回复，也是你的口吻。</h3>
-            <p>主动开启后，随译从你的历史里整理出一份风格档案，英文回复贴近你平时的语气和长度。文件只存在本机。</p>
+            <h3>发出去的回复，也是你的口吻。</h3>
+            <p>主动开启后，随译从你的历史里整理出一份风格档案，回复贴近你平时的语气和长度。文件只存在本机。</p>
             <div class="files" aria-label="本机文件">
               <code>~/.suiyi/history.jsonl</code>
               <code>~/.suiyi/profile.md</code>
@@ -194,7 +259,7 @@
           <article class="feature">
             <p class="tag">原生 macOS</p>
             <h3>像系统自带的一样。</h3>
-            <p>只住在菜单栏，没有 Dock 图标。弹窗用系统毛玻璃，跟随浅色、深色；不用时按 Esc 或点外面就收起。</p>
+            <p>只住在菜单栏，没有 Dock 图标。弹窗用系统毛玻璃，跟随浅色、深色；界面跟随系统语言。不用时按 Esc 或点外面就收起。</p>
             <div class="glass-duo" aria-hidden="true">
               <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
               <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
@@ -202,7 +267,7 @@
             <ul class="keys" aria-label="快捷键">
               <li><kbd>⌥⌘T</kbd> 翻译</li>
               <li><kbd>⌥⌘R</kbd> 改写</li>
-              <li><kbd>⌘↩</kbd> 生成英文回复</li>
+              <li><kbd>⌘↩</kbd> 生成回复</li>
             </ul>
           </article>
         </div>
@@ -210,7 +275,7 @@
     </section>
 
     <!-- 隐私 -->
-    <section class="section" id="privacy" aria-labelledby="privacy-title">
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">隐私</p>
@@ -228,13 +293,21 @@
     </section>
 
     <!-- 问答 -->
-    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+    <section class="section" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">问答</p>
           <h2 id="faq-title">用之前，你可能想知道。</h2>
         </div>
         <div class="faq">
+          <details>
+            <summary>支持哪些语言？</summary>
+            <p>中文、英文、日文任意两两互译。在设置里选「我的语言」：外语译成你的语言，你的语言译成「常用对外语言」，回复译回对方的语言。韩文、法文等其他语言也能译成你的语言。</p>
+          </details>
+          <details>
+            <summary>界面是什么语言？</summary>
+            <p>跟随 macOS 系统语言，支持简体中文、English、日本語；其他系统语言显示英文。</p>
+          </details>
           <details>
             <summary>需要自己的 API Key 吗？</summary>
             <p>需要。任何 OpenAI 兼容接口都行，默认 DeepSeek，也可以用 OpenAI、OpenRouter 或本地 Ollama。调用费用由你的服务商按量收取。</p>
@@ -244,23 +317,19 @@
             <p>读取你选中的文字、把改写结果替换回原位置，都需要这个 macOS 系统权限。没有它，随译无法工作。</p>
           </details>
           <details>
-            <summary>支持哪些语言？</summary>
-            <p>默认自动：中文译成英文，其他语言译成简体中文。也可以固定译成简体中文、English 或日本語。</p>
-          </details>
-          <details>
             <summary>我的文字会被保存吗？</summary>
             <p>默认不会。只有主动开启「像你写的」，历史和风格档案才会保存在本机 <code>~/.suiyi</code>，随时可以删除。</p>
           </details>
           <details>
             <summary>哪些 App 里能用？</summary>
-            <p>大多数能选中文字的 App 都能用，包括浏览器、Slack、邮件和终端。不想触发的 App 可以在设置里排除。</p>
+            <p>大多数能选中文字的 App 都能用，包括浏览器、Slack、钉钉、邮件和终端。不想触发的 App 可以在设置里排除。</p>
           </details>
         </div>
       </div>
     </section>
 
     <!-- 获取 -->
-    <section class="section get" id="get" aria-labelledby="get-title">
+    <section class="section section-alt get" id="get" aria-labelledby="get-title">
       <div class="container get-inner">
         <img class="get-icon" src="assets/icon-512.png" width="80" height="80" alt="随译应用图标">
         <h2 id="get-title">获取随译</h2>
@@ -278,7 +347,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span class="brand brand-sm"><img src="assets/favicon-64.png" width="20" height="20" alt="">随译</span>
-      <span>原生 macOS · 无遥测</span>
+      <span>原生 macOS · 中英日互译 · 无遥测</span>
     </div>
   </footer>
 </body>
