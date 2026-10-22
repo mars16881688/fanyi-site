@@ -78,7 +78,7 @@
           <div class="mac" id="demo" data-stage="4" role="img"
                data-status="示意动画" data-static="示意图" data-pause="暂停" data-play="播放"
                data-pause-label="暂停示意动画" data-play-label="播放示意动画"
-               data-stages="选中前|选中英文句子|出现随译按钮|结合上下文翻译|完成"
+               data-stages="选中前|选中英文句子|出现随译按钮|点一下，直接翻译|完成"
                aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现随译按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
             <div class="mac-bar" aria-hidden="true">
               <span class="lights"><i></i><i></i><i></i></span>
@@ -98,11 +98,11 @@
                 <div><p class="msg-name">Ken <time>10:45</time></p><p>了解です。リリースノートを書きます。</p></div>
               </div>
 
-              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span><span>翻译</span><span class="pill-sep"></span><span>改写</span></div>
+              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span></div>
 
               <div class="pop">
                 <div class="pop-head">
-                  <span class="pop-brand"><img src="assets/favicon-64.png" width="16" height="16" alt="">EN → 中文</span>
+                  <span class="pop-tabs"><b>翻译</b><span>改写</span></span>
                   <span class="pop-ctx">参考：Slack · #release</span>
                 </div>
                 <p class="pop-src">Let's ship it Friday and keep the changelog short.</p>
@@ -233,7 +233,7 @@
           <article class="feature">
             <p class="tag">改写</p>
             <h3>一句话，三种口吻。</h3>
-            <p>选中后点「改写」或按 <kbd>⌥⌘R</kbd>，同语言给出三个版本，中英日都行。原文可编辑时，一键替换。</p>
+            <p>在卡片顶部切到「改写」或按 <kbd>⌥⌘R</kbd>，同语言给出三个版本，中英日都行。原文可编辑时，一键替换。</p>
             <p class="rw-src">我想问一下这个事情现在进展怎么样了。</p>
             <ul class="rewrite" aria-label="三个改写版本">
               <li><span>简洁</span>这件事进展如何？</li>
