@@ -221,7 +221,7 @@
           <article class="feature">
             <p class="tag">懂上下文</p>
             <h3>同一个词，按场景译。</h3>
-            <p>翻译时参考当前 App、窗口标题和选中文字前后的内容。终端里的报错、聊天里的口语、邮件里的客套，各按各的译。</p>
+            <p>翻译时参考当前 App、窗口标题和选中文字前后的内容。聊天里的口语、邮件里的客套、文档里的术语，各按各的译。</p>
             <div class="ctx" aria-label="上下文翻译示例">
               <p class="ctx-src">ship it Friday</p>
               <div class="ctx-row"><span class="ctx-chip">无上下文</span><span class="ctx-bad">周五把它运走</span></div>
@@ -286,7 +286,7 @@
           <li><h3>无遥测</h3><p>不收集任何统计数据。默认不把选中文字写入磁盘。</p></li>
           <li><h3>Key 在钥匙串</h3><p>API Key 存在 macOS 钥匙串，接口和模型由你决定。</p></li>
           <li><h3>可以全在本机</h3><p>接本地 Ollama，请求不出你的 Mac。</p></li>
-          <li><h3>敏感处不触发</h3><p>密码框、安全输入状态下不弹出；也可按 App 排除。</p></li>
+          <li><h3>敏感处不触发</h3><p>密码类应用、密码框和安全输入状态下不弹出；选中内容像密码、密钥或卡号时，要再确认一次才发送。也可按 App 排除。</p></li>
         </ul>
         <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。少数 App 不提供选中文字时，随译会临时读一次剪贴板，随即恢复原内容。开启「像你写的」后，风格档案会随回复请求一起发送。菜单里的「检查更新」只在你点击时读取本站的版本文件。</p>
       </div>
@@ -322,7 +322,7 @@
           </details>
           <details>
             <summary>哪些 App 里能用？</summary>
-            <p>大多数能选中文字的 App 都能用，包括浏览器、Slack、钉钉、邮件和终端。不想触发的 App 可以在设置里排除。</p>
+            <p>大多数能选中文字的 App 都能用，包括浏览器、Slack、钉钉和邮件。终端和代码编辑器里常有密钥，默认不启用，需要时在 设置 › 安全 中打开。不想触发的 App 可以在设置里排除。</p>
           </details>
         </div>
       </div>
@@ -335,7 +335,7 @@
         <h2 id="get-title">获取随译</h2>
         <p class="section-sub">下载后照下面的步骤安装，几分钟就能用上。</p>
         <a class="btn btn-primary get-mail" href="https://github.com/mars16881688/fanyi-site/releases/latest/download/Suiyi.zip">下载随译（.zip）</a>
-        <p class="get-meta">版本 0.2.2 · macOS 13+ · <a href="https://github.com/mars16881688/fanyi-site/releases/latest">更新说明</a></p>
+        <p class="get-meta">版本 0.2.3 · macOS 13+ · <a href="https://github.com/mars16881688/fanyi-site/releases/latest">更新说明</a></p>
         <p class="get-meta">问题和建议：<a href="https://github.com/mars16881688/fanyi-site/issues/new?template=feedback.md">在 GitHub 提交反馈</a> 或发邮件 <a href="mailto:mars.yahui@gmail.com?subject=%E9%9A%8F%E8%AF%91%E5%8F%8D%E9%A6%88">mars.yahui@gmail.com</a>；App 菜单里也有「反馈…」。</p>
         <ul class="reqs" aria-label="使用要求">
           <li>macOS 13 或更高</li>
