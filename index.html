@@ -6,12 +6,12 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
-  <title>Fanyi — macOS 划词翻译，中文写、英文发</title>
-  <meta name="description" content="Fanyi 是原生 macOS 菜单栏划词翻译工具。选中即译，结合上下文；收到英文消息，用中文写回复，一键译成英文。无遥测，API Key 存于钥匙串。">
+  <title>Ferry 渡 — 英文的工作，用中文完成</title>
+  <meta name="description" content="Ferry 渡是原生 macOS 菜单栏工具。选中任何文字就地看懂；收到英文消息，用中文写回复，译成地道英文，语气像你。无遥测，API Key 存于钥匙串。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:title" content="Fanyi — macOS 划词翻译，中文写、英文发">
-  <meta property="og:description" content="选中即译，懂上下文。用中文回复英文消息。原生 macOS，无遥测。">
+  <meta property="og:title" content="Ferry 渡 — 英文的工作，用中文完成">
+  <meta property="og:description" content="选中就懂，中文写、英文发，语气像你。原生 macOS，无遥测。">
   <meta property="og:url" content="https://mars16881688.github.io/fanyi-site/">
   <meta property="og:image" content="https://mars16881688.github.io/fanyi-site/assets/icon-512.png">
   <link rel="icon" type="image/png" href="assets/favicon-64.png">
@@ -24,13 +24,14 @@
 
   <header class="site-header">
     <nav class="container nav" aria-label="主导航">
-      <a class="brand" href="#top"><img src="assets/favicon-64.png" width="28" height="28" alt=""><span>Fanyi</span></a>
+      <a class="brand" href="#top"><img src="assets/favicon-64.png" width="28" height="28" alt=""><span>Ferry <span class="brand-cn">渡</span></span></a>
       <div class="nav-links">
-        <a href="#how">怎么用</a>
+        <a href="#why">为什么</a>
         <a href="#features">功能</a>
         <a href="#privacy">隐私</a>
+        <a href="#faq">问答</a>
       </div>
-      <a class="btn btn-primary btn-sm" href="#get">获取 Fanyi</a>
+      <a class="btn btn-primary btn-sm" href="#get">获取</a>
     </nav>
   </header>
 
@@ -39,12 +40,12 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">macOS 菜单栏划词翻译</p>
-          <h1 id="hero-title"><span class="line">选中就懂。</span><span class="line">中文写，英文发。</span></h1>
-          <p class="lede">在任何 App 里选中文字，旁边出现一个小按钮，点一下就翻译或改写。收到英文消息，用中文写回复，Fanyi 译成地道英文。</p>
+          <p class="eyebrow">Mac 菜单栏里的翻译与回复</p>
+          <h1 id="hero-title"><span class="line">英文的工作，</span><span class="line">用中文完成。</span></h1>
+          <p class="lede">选中任何文字，就地看懂。收到英文消息，用中文写回复，Ferry 译成地道英文，语气还像你。</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#get">获取 Fanyi</a>
-            <a class="btn btn-ghost" href="#how">看看怎么用</a>
+            <a class="btn btn-primary" href="#get">获取 Ferry</a>
+            <a class="btn btn-ghost" href="#why">看看差在哪</a>
           </div>
           <ul class="hero-meta" aria-label="基本信息">
             <li>macOS 13+</li>
@@ -54,7 +55,7 @@
         </div>
 
         <figure class="hero-visual">
-          <div class="mac" id="demo" data-stage="4" role="img" aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现 Fanyi 按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
+          <div class="mac" id="demo" data-stage="4" role="img" aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现 Ferry 按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
             <div class="mac-bar" aria-hidden="true">
               <span class="lights"><i></i><i></i><i></i></span>
               <span class="mac-title">Slack — #release</span>
@@ -94,19 +95,36 @@
       </div>
     </section>
 
-    <!-- 四步 -->
-    <section class="section" id="how" aria-labelledby="how-title">
+    <!-- 为什么：前后对比 -->
+    <section class="section" id="why" aria-labelledby="why-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">怎么用</p>
-          <h2 id="how-title">不切窗口，四步说清楚。</h2>
+          <p class="eyebrow">为什么</p>
+          <h2 id="why-title">回一条英文消息，<br>以前七步，现在三步。</h2>
         </div>
-        <ol class="steps">
-          <li><span class="step-n">01</span><h3>选中</h3><p>拖选或双击文字，鼠标旁出现小圆按钮。不用就自动消失。</p></li>
-          <li><span class="step-n">02</span><h3>翻译</h3><p>中文译成英文，其他语言译成中文。也可直接按 <kbd>⌥⌘T</kbd>。</p></li>
-          <li><span class="step-n">03</span><h3>回复</h3><p>看懂之后，用中文写回复，<kbd>⌘↩</kbd> 生成英文。</p></li>
-          <li><span class="step-n">04</span><h3>按你的风格写</h3><p>可选，默认关闭。英文回复贴近你平时的语气和长度。</p></li>
-        </ol>
+        <div class="compare">
+          <div class="compare-col compare-before">
+            <h3>以前</h3>
+            <ol>
+              <li>复制原文</li>
+              <li>切到翻译网页，粘贴</li>
+              <li>读译文，想怎么回</li>
+              <li>写好中文</li>
+              <li>再贴进去译成英文</li>
+              <li>改掉生硬的语气</li>
+              <li>复制回去，发送</li>
+            </ol>
+          </div>
+          <div class="compare-col compare-after">
+            <h3>用 Ferry</h3>
+            <ol>
+              <li>选中原文，读译文</li>
+              <li>写中文回复，按 <kbd>⌘↩</kbd></li>
+              <li>复制，发送</li>
+            </ol>
+            <p class="compare-note">全程不离开当前窗口。</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -115,7 +133,7 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">功能</p>
-          <h2 id="features-title">翻译、改写、回复，一张卡片。</h2>
+          <h2 id="features-title">看懂、回复、写得像你。</h2>
         </div>
 
         <!-- 一键回复 -->
@@ -123,7 +141,7 @@
           <div class="feature-text">
             <p class="tag">一键回复</p>
             <h3>对方写英文，你写中文。</h3>
-            <p>英文消息先译成中文；你用中文写回复，Fanyi 译回英文，复制即发。</p>
+            <p>英文消息先译成中文。你用中文写回复，按 <kbd>⌘↩</kbd>，Ferry 译回英文，复制即发。</p>
           </div>
           <div class="reply-flow" aria-label="一键回复流程示例">
             <div class="rf-row"><span class="rf-lang">EN</span><p><span class="rf-label">对方</span>Can you send the deck before Thursday?</p></div>
@@ -136,7 +154,7 @@
         <div class="feature-grid">
           <!-- 上下文 -->
           <article class="feature">
-            <p class="tag">理解上下文</p>
+            <p class="tag">懂上下文</p>
             <h3>同一个词，按场景译。</h3>
             <p>翻译时参考当前 App、窗口标题和选中文字前后的内容。终端里的报错、聊天里的口语、邮件里的客套，各按各的译。</p>
             <div class="ctx" aria-label="上下文翻译示例">
@@ -159,27 +177,33 @@
             </ul>
           </article>
 
-          <!-- 毛玻璃 -->
-          <article class="feature">
-            <p class="tag">毛玻璃弹窗</p>
-            <h3>像系统自带的一样。</h3>
-            <p>用系统原生的毛玻璃材质，自动跟随浅色、深色。卡片可拖动，按 Esc 或点外面就收起。</p>
-            <div class="glass-duo" aria-hidden="true">
-              <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
-              <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
-            </div>
-          </article>
-
           <!-- 个人风格 -->
           <article class="feature">
-            <p class="tag">个人风格 <span class="badge">默认关闭</span></p>
-            <h3>回复像你写的。</h3>
-            <p>主动开启后，历史和风格档案只存在本机 <code>~/.fanyi</code>。回复时参考你的语气；Codex 和 Claude Code 也能读取，代你写作时更像你。</p>
+            <p class="tag">像你写的 <span class="badge">默认关闭</span></p>
+            <h3>英文回复，也是你的口吻。</h3>
+            <p>主动开启后，Ferry 从你的历史里整理出一份风格档案，英文回复贴近你平时的语气和长度。文件只存在本机。</p>
             <div class="files" aria-label="本机文件">
               <code>~/.fanyi/history.jsonl</code>
               <code>~/.fanyi/profile.md</code>
             </div>
+            <p class="agents-note">Codex 和 Claude Code 也能读取这份档案，代你写作时同样像你。</p>
             <div class="agents"><span>Codex</span><span>Claude Code</span></div>
+          </article>
+
+          <!-- 原生 -->
+          <article class="feature">
+            <p class="tag">原生 macOS</p>
+            <h3>像系统自带的一样。</h3>
+            <p>只住在菜单栏，没有 Dock 图标。弹窗用系统毛玻璃，跟随浅色、深色；不用时按 Esc 或点外面就收起。</p>
+            <div class="glass-duo" aria-hidden="true">
+              <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
+              <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
+            </div>
+            <ul class="keys" aria-label="快捷键">
+              <li><kbd>⌥⌘T</kbd> 翻译</li>
+              <li><kbd>⌥⌘R</kbd> 改写</li>
+              <li><kbd>⌘↩</kbd> 生成英文回复</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -190,25 +214,57 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">隐私</p>
-          <h2 id="privacy-title">你的文字，不经过我们。</h2>
-          <p class="section-sub">Fanyi 没有服务器。请求只发往你自己配置的接口。</p>
+          <h2 id="privacy-title">你的文字，只去你选的地方。</h2>
+          <p class="section-sub">Ferry 没有自己的服务器。请求只发往你配置的模型接口。</p>
         </div>
         <ul class="privacy">
           <li><h3>无遥测</h3><p>不收集任何统计数据。默认不把选中文字写入磁盘。</p></li>
           <li><h3>Key 在钥匙串</h3><p>API Key 存在 macOS 钥匙串，接口和模型由你决定。</p></li>
-          <li><h3>用你的接口</h3><p>任意 OpenAI 兼容接口，默认 DeepSeek。也可接本地 Ollama。</p></li>
+          <li><h3>可以全在本机</h3><p>接本地 Ollama，请求不出你的 Mac。</p></li>
           <li><h3>敏感处不触发</h3><p>密码框、安全输入状态下不弹出；也可按 App 排除。</p></li>
         </ul>
-        <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。部分 App 不提供选中文字时，Fanyi 会临时读取一次剪贴板，随即恢复原内容。开启个人风格后，风格档案会随回复请求一起发送。</p>
+        <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。少数 App 不提供选中文字时，Ferry 会临时读一次剪贴板，随即恢复原内容。开启「像你写的」后，风格档案会随回复请求一起发送。</p>
+      </div>
+    </section>
+
+    <!-- 问答 -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">问答</p>
+          <h2 id="faq-title">用之前，你可能想知道。</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>需要自己的 API Key 吗？</summary>
+            <p>需要。任何 OpenAI 兼容接口都行，默认 DeepSeek，也可以用 OpenAI、OpenRouter 或本地 Ollama。调用费用由你的服务商按量收取。</p>
+          </details>
+          <details>
+            <summary>为什么要辅助功能权限？</summary>
+            <p>读取你选中的文字、把改写结果替换回原位置，都需要这个 macOS 系统权限。没有它，Ferry 无法工作。</p>
+          </details>
+          <details>
+            <summary>支持哪些语言？</summary>
+            <p>默认自动：中文译成英文，其他语言译成简体中文。也可以固定译成简体中文、English 或日本語。</p>
+          </details>
+          <details>
+            <summary>我的文字会被保存吗？</summary>
+            <p>默认不会。只有主动开启「像你写的」，历史和风格档案才会保存在本机 <code>~/.fanyi</code>，随时可以删除。</p>
+          </details>
+          <details>
+            <summary>哪些 App 里能用？</summary>
+            <p>大多数能选中文字的 App 都能用，包括浏览器、Slack、邮件和终端。不想触发的 App 可以在设置里排除。</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- 获取 -->
-    <section class="section section-alt get" id="get" aria-labelledby="get-title">
+    <section class="section get" id="get" aria-labelledby="get-title">
       <div class="container get-inner">
-        <img class="get-icon" src="assets/icon-512.png" width="80" height="80" alt="Fanyi 应用图标">
-        <h2 id="get-title">获取 Fanyi</h2>
-        <p class="section-sub">Fanyi 目前小范围试用，暂不公开下载。想试用，请联系作者获取。</p>
+        <img class="get-icon" src="assets/icon-512.png" width="80" height="80" alt="Ferry 应用图标">
+        <h2 id="get-title">获取 Ferry</h2>
+        <p class="section-sub">目前小范围试用，暂不公开下载。想试用，请联系作者获取。</p>
         <ul class="reqs" aria-label="使用要求">
           <li>macOS 13 或更高</li>
           <li>授予辅助功能权限</li>
@@ -220,7 +276,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="brand brand-sm"><img src="assets/favicon-64.png" width="20" height="20" alt="">Fanyi</span>
+      <span class="brand brand-sm"><img src="assets/favicon-64.png" width="20" height="20" alt="">Ferry <span class="brand-cn">渡</span></span>
       <span>原生 macOS · 无遥测</span>
     </div>
   </footer>
