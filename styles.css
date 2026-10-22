@@ -122,6 +122,7 @@ kbd {
 .nav { display: flex; align-items: center; gap: 32px; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--ink); letter-spacing: -0.02em; }
 .brand img { border-radius: 7px; }
+.brand-cn { font-weight: 500; color: var(--muted); margin-left: 2px; }
 .nav-links { display: flex; gap: 28px; margin-left: auto; font-size: 15px; color: var(--muted); }
 .nav-links a { padding: 8px 0; }
 .nav-links a:hover { color: var(--ink); }
@@ -223,13 +224,20 @@ kbd {
 .section-head h2 { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.25; }
 .section-sub { margin-top: 16px; font-size: 17px; color: var(--muted); }
 
-/* 四步 */
-.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; counter-reset: step; }
-.steps li { padding-top: 24px; border-top: 1px solid var(--line); }
-.steps li:first-child { border-top-color: var(--accent); }
-.step-n { font: 600 13px var(--mono); color: var(--accent); }
-.steps h3 { font-size: 20px; margin: 12px 0 8px; }
-.steps p { font-size: 15px; color: var(--muted); }
+/* 前后对比 */
+.compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.compare-col { padding: 32px; border-radius: var(--radius); border: 1px solid var(--line); }
+.compare-col h3 { font-size: 18px; margin-bottom: 20px; }
+.compare-col ol { counter-reset: n; display: grid; gap: 12px; }
+.compare-col li { counter-increment: n; display: flex; align-items: baseline; gap: 14px; font-size: 16px; }
+.compare-col li::before { content: counter(n); flex: none; width: 24px; font: 600 13px var(--mono); }
+.compare-before { background: var(--bg-alt); }
+.compare-before h3, .compare-before li { color: var(--muted); }
+.compare-before li::before { color: var(--muted); }
+.compare-after { background: var(--card); box-shadow: var(--shadow); border-color: var(--accent); }
+.compare-after li { color: var(--ink); font-weight: 600; }
+.compare-after li::before { color: var(--accent); }
+.compare-note { margin-top: 24px; font-size: 14px; color: var(--accent); font-weight: 600; }
 
 /* 功能卡 */
 .feature {
@@ -294,12 +302,29 @@ kbd {
 .agents { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
 .agents span { font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); }
 
+.agents-note { margin-top: 16px; font-size: 14px; color: var(--muted); }
+.keys { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; font-size: 14px; color: var(--muted); }
+
 /* 隐私 */
 .privacy { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .privacy li { padding: 24px 0 0; border-top: 2px solid var(--ink); }
 .privacy h3 { font-size: 18px; margin-bottom: 8px; }
 .privacy p { font-size: 15px; color: var(--muted); }
 .fineprint { margin-top: 40px; max-width: 720px; font-size: 14px; color: var(--muted); }
+
+/* 问答 */
+.faq { max-width: 760px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  min-height: 64px; padding: 16px 0; cursor: pointer; list-style: none;
+  font-size: 17px; font-weight: 600; color: var(--ink);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; flex: none; font: 400 22px var(--mono); color: var(--muted); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { padding: 0 32px 20px 0; font-size: 15px; color: var(--muted); }
+.faq code { font-size: .9em; color: var(--ink); }
 
 /* 获取 */
 .get-inner { text-align: center; display: flex; flex-direction: column; align-items: center; }
@@ -319,7 +344,6 @@ kbd {
 @media (max-width: 960px) {
   .hero { padding: 56px 0 72px; }
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 48px; }
-  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
   .feature-wide { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .privacy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
 }
@@ -345,7 +369,8 @@ kbd {
   .pop-out { font-size: 16px; }
   .section { padding: 72px 0; }
   .section-head { margin-bottom: 36px; }
-  .steps, .feature-grid, .privacy { grid-template-columns: minmax(0, 1fr); }
+  .compare, .feature-grid, .privacy { grid-template-columns: minmax(0, 1fr); }
+  .compare-col { padding: 24px 20px; }
   .feature { padding: 24px 20px; }
   .feature h3 { font-size: 22px; }
   .glass-sample { height: 104px; }
