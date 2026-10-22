@@ -1,9 +1,9 @@
 {
-  "version": "0.2.0",
-  "url": "https://mars16881688.github.io/fanyi-site/#get",
+  "version": "0.2.1",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/latest",
   "notes": {
-    "zh": "中英日两两互译，界面支持中英日，新图标与卡片设计。",
-    "en": "Translate between Chinese, English and Japanese, a trilingual interface, a new icon and card design.",
-    "ja": "日中英の相互翻訳、3 言語のインターフェース、新しいアイコンとカードデザイン。"
+    "zh": "点一下直接翻译，改写改为 tab；回复卡片按钮调整；回复翻译参考对方原话。",
+    "en": "One click translates and Rewrite is a tab; a cleaner reply card; replies use the original message as context.",
+    "ja": "ワンクリックで翻訳、書き換えはタブに。返信カードを整理し、返信は相手のメッセージを文脈として翻訳。"
   }
 }
