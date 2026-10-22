@@ -1,10 +1,12 @@
 {
-  "version": "0.2.4",
-  "url": "https://github.com/mars16881688/fanyi-site/releases/latest",
+  "version": "0.2.5",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.5",
+  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.5/Suiyi.zip",
+  "sha256": "0ec48b7e80c41ef9f312343d8bd7911ac1cb5bdc86939ccc00665765961aab8d",
   "notes": {
-    "zh": "加入韩文：中英日韩两两互译，界面支持韩文。",
-    "en": "Korean added: any pair of Chinese, English, Japanese and Korean, plus a Korean interface.",
-    "ja": "韓国語に対応：日中英韓を相互に翻訳し、韓国語のインターフェースにも対応。",
-    "ko": "한국어 추가: 한국어·중국어·영어·일본어를 어떤 조합으로든 번역하며, 한국어 인터페이스도 지원합니다."
+    "zh": "应用内一键更新；新增每天自动检查更新（可在设置里关闭）。",
+    "en": "One-click updates in the app, plus a daily automatic update check (can be turned off in Settings).",
+    "ja": "アプリ内でワンクリック更新。毎日のアップデート自動確認を追加（設定でオフにできます）。",
+    "ko": "앱에서 한 번에 업데이트하고, 매일 업데이트를 자동으로 확인합니다(설정에서 끌 수 있음)."
   }
 }
