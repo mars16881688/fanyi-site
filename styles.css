@@ -380,6 +380,7 @@ html[lang="ko"] { word-break: keep-all; }
 .install-fallback { margin-top: 20px; font-size: 14px; color: var(--muted); }
 .install-fallback code { display: inline-block; margin-top: 6px; padding: 8px 12px; border-radius: 8px; background: var(--card); border: 1px solid var(--line); color: var(--ink); font-size: 13px; overflow-wrap: anywhere; }
 
+
 /* 页脚 */
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0; font-size: 14px; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
