@@ -1,9 +1,10 @@
 {
-  "version": "0.2.3",
+  "version": "0.2.4",
   "url": "https://github.com/mars16881688/fanyi-site/releases/latest",
   "notes": {
-    "zh": "敏感内容守卫：不读密码类应用和页面，像密码、密钥的内容需确认才发送；浏览器选中文字不经剪贴板；新增翻译风格；终端和代码编辑器默认不启用。",
-    "en": "Sensitive-content guard: password apps and pages are never read, and password- or key-like selections need confirmation; browser selections skip the clipboard; new translation style; terminals and code editors are off by default.",
-    "ja": "機密情報ガード：パスワード管理アプリやページは読み取らず、パスワードやキーのような選択は確認後に送信。ブラウザの選択はクリップボードを使いません。翻訳スタイルを追加。ターミナルとコードエディタは既定でオフ。"
+    "zh": "加入韩文：中英日韩两两互译，界面支持韩文。",
+    "en": "Korean added: any pair of Chinese, English, Japanese and Korean, plus a Korean interface.",
+    "ja": "韓国語に対応：日中英韓を相互に翻訳し、韓国語のインターフェースにも対応。",
+    "ko": "한국어 추가: 한국어·중국어·영어·일본어를 어떤 조합으로든 번역하며, 한국어 인터페이스도 지원합니다."
   }
 }
