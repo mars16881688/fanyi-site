@@ -329,6 +329,18 @@
           <li>Accessibility access</li>
           <li>An OpenAI-compatible API key</li>
         </ul>
+        <div class="install" id="install">
+          <h3>Installation</h3>
+          <p class="install-sub">Once you have the zip, these five steps get you going.</p>
+          <ol class="install-steps">
+            <li><span class="step-n">1</span><div><h4>Move to Applications</h4><p>Unzip, drag <b>Suiyi.app</b> into your Applications folder and open it.</p></div></li>
+            <li><span class="step-n">2</span><div><h4>Allow it to open</h4><p>If macOS says the developer cannot be verified, open <b>System Settings › Privacy &amp; Security</b>, scroll to the bottom, click “Open Anyway” and confirm. Only needed once.</p></div></li>
+            <li><span class="step-n">3</span><div><h4>Grant Accessibility access</h4><p>When asked, turn on Suiyi in <b>System Settings › Privacy &amp; Security › Accessibility</b>, then quit and reopen Suiyi.</p></div></li>
+            <li><span class="step-n">4</span><div><h4>Add your API key</h4><p>Click the Suiyi icon in the menu bar › Settings…, enter an API key (any OpenAI-compatible API; DeepSeek by default), click Test Connection, then Save.</p></div></li>
+            <li><span class="step-n">5</span><div><h4>Pick your language</h4><p>Choose “My language” in Settings. Then select text in any app and click the small button to translate; <kbd>⌥⌘T</kbd> translates, <kbd>⌥⌘R</kbd> rewrites.</p></div></li>
+          </ol>
+          <p class="install-fallback">Can't find “Open Anyway” in step 2? Run this in Terminal:<br><code>xattr -dr com.apple.quarantine /Applications/Suiyi.app</code></p>
+        </div>
       </div>
     </section>
   </main>
