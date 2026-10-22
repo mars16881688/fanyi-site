@@ -6,11 +6,11 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
-  <title>Ferry 渡 — 英文的工作，用中文完成</title>
-  <meta name="description" content="Ferry 渡是原生 macOS 菜单栏工具。选中任何文字就地看懂；收到英文消息，用中文写回复，译成地道英文，语气像你。无遥测，API Key 存于钥匙串。">
+  <title>随译 — Mac 全局翻译助手</title>
+  <meta name="description" content="随译是 Mac 全局翻译助手，住在菜单栏。选中任何文字就地看懂；收到英文消息，用中文写回复，译成地道英文，语气像你。无遥测，API Key 存于钥匙串。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:title" content="Ferry 渡 — 英文的工作，用中文完成">
+  <meta property="og:title" content="随译 — Mac 全局翻译助手">
   <meta property="og:description" content="选中就懂，中文写、英文发，语气像你。原生 macOS，无遥测。">
   <meta property="og:url" content="https://mars16881688.github.io/fanyi-site/">
   <meta property="og:image" content="https://mars16881688.github.io/fanyi-site/assets/icon-512.png">
@@ -24,7 +24,7 @@
 
   <header class="site-header">
     <nav class="container nav" aria-label="主导航">
-      <a class="brand" href="#top"><img src="assets/favicon-64.png" width="28" height="28" alt=""><span>Ferry <span class="brand-cn">渡</span></span></a>
+      <a class="brand" href="#top"><img src="assets/favicon-64.png" width="28" height="28" alt=""><span>随译</span></a>
       <div class="nav-links">
         <a href="#why">为什么</a>
         <a href="#features">功能</a>
@@ -40,11 +40,11 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Mac 菜单栏里的翻译与回复</p>
+          <p class="eyebrow">Mac 全局翻译助手</p>
           <h1 id="hero-title"><span class="line">英文的工作，</span><span class="line">用中文完成。</span></h1>
-          <p class="lede">选中任何文字，就地看懂。收到英文消息，用中文写回复，Ferry 译成地道英文，语气还像你。</p>
+          <p class="lede">选中任何文字，就地看懂。收到英文消息，用中文写回复，自动变成地道英文，语气还像你。</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#get">获取 Ferry</a>
+            <a class="btn btn-primary" href="#get">获取随译</a>
             <a class="btn btn-ghost" href="#why">看看差在哪</a>
           </div>
           <ul class="hero-meta" aria-label="基本信息">
@@ -55,7 +55,7 @@
         </div>
 
         <figure class="hero-visual">
-          <div class="mac" id="demo" data-stage="4" role="img" aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现 Ferry 按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
+          <div class="mac" id="demo" data-stage="4" role="img" aria-label="示意：在 Slack 里选中英文句子 Let's ship it Friday，旁边出现随译按钮，弹出毛玻璃窗口，参考 #release 频道上下文，译为「周五上线吧，更新日志写短一点。」">
             <div class="mac-bar" aria-hidden="true">
               <span class="lights"><i></i><i></i><i></i></span>
               <span class="mac-title">Slack — #release</span>
@@ -116,7 +116,7 @@
             </ol>
           </div>
           <div class="compare-col compare-after">
-            <h3>用 Ferry</h3>
+            <h3>用随译</h3>
             <ol>
               <li>选中原文，读译文</li>
               <li>写中文回复，按 <kbd>⌘↩</kbd></li>
@@ -141,7 +141,7 @@
           <div class="feature-text">
             <p class="tag">一键回复</p>
             <h3>对方写英文，你写中文。</h3>
-            <p>英文消息先译成中文。你用中文写回复，按 <kbd>⌘↩</kbd>，Ferry 译回英文，复制即发。</p>
+            <p>英文消息先译成中文。你用中文写回复，按 <kbd>⌘↩</kbd>，转成英文，复制即发。</p>
           </div>
           <div class="reply-flow" aria-label="一键回复流程示例">
             <div class="rf-row"><span class="rf-lang">EN</span><p><span class="rf-label">对方</span>Can you send the deck before Thursday?</p></div>
@@ -181,7 +181,7 @@
           <article class="feature">
             <p class="tag">像你写的 <span class="badge">默认关闭</span></p>
             <h3>英文回复，也是你的口吻。</h3>
-            <p>主动开启后，Ferry 从你的历史里整理出一份风格档案，英文回复贴近你平时的语气和长度。文件只存在本机。</p>
+            <p>主动开启后，随译从你的历史里整理出一份风格档案，英文回复贴近你平时的语气和长度。文件只存在本机。</p>
             <div class="files" aria-label="本机文件">
               <code>~/.fanyi/history.jsonl</code>
               <code>~/.fanyi/profile.md</code>
@@ -215,7 +215,7 @@
         <div class="section-head">
           <p class="eyebrow">隐私</p>
           <h2 id="privacy-title">你的文字，只去你选的地方。</h2>
-          <p class="section-sub">Ferry 没有自己的服务器。请求只发往你配置的模型接口。</p>
+          <p class="section-sub">随译没有自己的服务器。请求只发往你配置的模型接口。</p>
         </div>
         <ul class="privacy">
           <li><h3>无遥测</h3><p>不收集任何统计数据。默认不把选中文字写入磁盘。</p></li>
@@ -223,7 +223,7 @@
           <li><h3>可以全在本机</h3><p>接本地 Ollama，请求不出你的 Mac。</p></li>
           <li><h3>敏感处不触发</h3><p>密码框、安全输入状态下不弹出；也可按 App 排除。</p></li>
         </ul>
-        <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。少数 App 不提供选中文字时，Ferry 会临时读一次剪贴板，随即恢复原内容。开启「像你写的」后，风格档案会随回复请求一起发送。</p>
+        <p class="fineprint">说清楚：翻译时，选中文字、当前 App 名、窗口标题和附近文字会发送到你配置的接口。少数 App 不提供选中文字时，随译会临时读一次剪贴板，随即恢复原内容。开启「像你写的」后，风格档案会随回复请求一起发送。</p>
       </div>
     </section>
 
@@ -241,7 +241,7 @@
           </details>
           <details>
             <summary>为什么要辅助功能权限？</summary>
-            <p>读取你选中的文字、把改写结果替换回原位置，都需要这个 macOS 系统权限。没有它，Ferry 无法工作。</p>
+            <p>读取你选中的文字、把改写结果替换回原位置，都需要这个 macOS 系统权限。没有它，随译无法工作。</p>
           </details>
           <details>
             <summary>支持哪些语言？</summary>
@@ -262,8 +262,8 @@
     <!-- 获取 -->
     <section class="section get" id="get" aria-labelledby="get-title">
       <div class="container get-inner">
-        <img class="get-icon" src="assets/icon-512.png" width="80" height="80" alt="Ferry 应用图标">
-        <h2 id="get-title">获取 Ferry</h2>
+        <img class="get-icon" src="assets/icon-512.png" width="80" height="80" alt="随译应用图标">
+        <h2 id="get-title">获取随译</h2>
         <p class="section-sub">目前小范围试用，暂不公开下载。想试用，请联系作者获取。</p>
         <ul class="reqs" aria-label="使用要求">
           <li>macOS 13 或更高</li>
@@ -276,7 +276,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="brand brand-sm"><img src="assets/favicon-64.png" width="20" height="20" alt="">Ferry <span class="brand-cn">渡</span></span>
+      <span class="brand brand-sm"><img src="assets/favicon-64.png" width="20" height="20" alt="">随译</span>
       <span>原生 macOS · 无遥测</span>
     </div>
   </footer>

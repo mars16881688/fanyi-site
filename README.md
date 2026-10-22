@@ -1,4 +1,4 @@
-# Ferry 渡（原 Fanyi）介绍页
+# 随译（原 Fanyi）介绍页
 
 纯静态页面（`index.html` + `styles.css` + `main.js`），无构建步骤、无外部依赖、无统计脚本。GitHub Pages 从默认分支根目录发布，`.nojekyll` 需保留。
 
