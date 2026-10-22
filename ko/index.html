@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
+  <title>Suiyi — Mac 어디서나 번역 · 한국어, 중국어, 영어, 일본어</title>
+  <meta name="description" content="Suiyi는 메뉴 막대에 있는 Mac 번역 도우미입니다. 텍스트를 선택한 곳에서 한국어·중국어·영어·일본어를 서로 번역하고, 내 언어로 쓴 답장을 상대방의 언어로 보냅니다. 원격 분석 없음.">
+  <link rel="alternate" hreflang="zh-CN" href="https://mars16881688.github.io/fanyi-site/">
+  <link rel="alternate" hreflang="en" href="https://mars16881688.github.io/fanyi-site/en/">
+  <link rel="alternate" hreflang="ja" href="https://mars16881688.github.io/fanyi-site/ja/">
+  <link rel="alternate" hreflang="ko" href="https://mars16881688.github.io/fanyi-site/ko/">
+  <link rel="alternate" hreflang="x-default" href="https://mars16881688.github.io/fanyi-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="Suiyi — Mac 어디서나 번역">
+  <meta property="og:description" content="한국어·중국어·영어·일본어를 어떤 조합으로든. 내 언어로 읽고 내 언어로 답장하세요. macOS 네이티브, 원격 분석 없음.">
+  <meta property="og:url" content="https://mars16881688.github.io/fanyi-site/ko/">
+  <meta property="og:image" content="https://mars16881688.github.io/fanyi-site/assets/icon-512.png">
+  <link rel="icon" type="image/png" href="../assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="메인">
+      <a class="brand" href="#top"><img src="../assets/favicon-64.png" width="28" height="28" alt=""><span>Suiyi</span></a>
+      <div class="nav-links">
+        <a href="#languages">언어</a>
+        <a href="#features">기능</a>
+        <a href="#privacy">개인정보</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="lang-switch" aria-label="언어">
+        <a href="../" lang="zh-CN" data-lang="zh">中文</a>
+        <a href="../en/" lang="en" data-lang="en">EN</a>
+        <a href="../ja/" lang="ja" data-lang="ja">日本語</a>
+        <a href="./" lang="ko" data-lang="ko" aria-current="page">한국어</a>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#get">다운로드</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 히어로 -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mac 번역 도우미 · 한국어 · 中文 · English · 日本語</p>
+          <h1 id="hero-title"><span class="line">외국어로 하는 일도,</span><span class="line">내 언어로.</span></h1>
+          <p class="lede">선택한 텍스트를 그 자리에서 이해하세요. 영어나 일본어 메시지에 한국어로 답장을 쓰면 Suiyi가 상대방의 언어로 바꿔 보냅니다. 내 말투 그대로.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#get">Suiyi 받기</a>
+            <a class="btn btn-ghost" href="#languages">사용 방법 보기</a>
+          </div>
+          <ul class="hero-meta" aria-label="요약">
+            <li>macOS 13 이상</li>
+            <li>한국어 · 中文 · English · 日本語</li>
+            <li>원격 분석 없음</li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="mac" id="demo" data-stage="4" role="img"
+               data-status="데모" data-static="예시 화면" data-pause="일시 정지" data-play="재생"
+               data-pause-label="데모 일시 정지" data-play-label="데모 재생"
+               data-stages="선택 전|영어 문장 선택|Suiyi 버튼 표시|한 번 클릭으로 번역|완료"
+               aria-label="예시 화면: Slack에서 영어 문장 Let's ship it Friday를 선택하면 Suiyi 버튼이 나타나고, 반투명 카드가 #release 채널의 문맥을 참고해 「금요일에 출시하고 변경 내역은 짧게 정리합시다.」로 번역합니다.">
+            <div class="mac-bar" aria-hidden="true">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="mac-title">Slack — #release</span>
+            </div>
+            <div class="mac-body" aria-hidden="true">
+              <div class="msg">
+                <span class="avatar a1">A</span>
+                <div><p class="msg-name">Alex <time>10:42</time></p><p lang="en">QA signed off on build 2.4.</p></div>
+              </div>
+              <div class="msg">
+                <span class="avatar a2">J</span>
+                <div><p class="msg-name">Jordan <time>10:44</time></p><p><mark class="sel" lang="en">Let's ship it Friday and keep the changelog short.</mark></p></div>
+              </div>
+              <div class="msg msg-faint">
+                <span class="avatar a3">K</span>
+                <div><p class="msg-name">Ken <time>10:45</time></p><p lang="ja">了解です。リリースノートを書きます。</p></div>
+              </div>
+
+              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span></div>
+
+              <div class="pop">
+                <div class="pop-head">
+                  <span class="pop-tabs"><b>번역</b><span>다시 쓰기</span></span>
+                  <span class="pop-ctx">문맥: Slack · #release</span>
+                </div>
+                <p class="pop-src" lang="en">Let's ship it Friday and keep the changelog short.</p>
+                <p class="pop-out"><span id="demo-text">금요일에 출시하고 변경 내역은 짧게 정리합시다.</span><span class="caret"></span></p>
+                <div class="pop-actions"><span>번역문 복사</span><span class="pop-reply">한국어로 답장</span></div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="demo-bar">
+            <span class="demo-status" id="demo-status">데모</span>
+            <button class="demo-toggle" id="demo-toggle" type="button" hidden>일시 정지</button>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 언어 -->
+    <section class="section" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">네 가지 언어</p>
+          <h2 id="languages-title">한국어·중국어·영어·일본어, 어떤 조합이든.</h2>
+          <p class="section-sub">설정에서 「내 언어」만 고르면 됩니다. 외국어는 내 언어로 번역하고, 답장은 상대방의 언어로 돌려보냅니다.</p>
+        </div>
+        <ul class="people">
+          <li class="person">
+            <div class="person-head"><span class="avatar a2">陈</span><div><p class="person-name">천</p><p class="person-lang">내 언어: 中文</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">받음 · EN</span><span class="v" lang="en">Can we ship on Friday?</span></li>
+              <li><span class="k">보임</span><span class="v" lang="zh-CN">周五能上线吗？</span></li>
+              <li class="mine"><span class="k">입력</span><span class="v" lang="zh-CN">可以，周五没问题。</span></li>
+              <li class="out"><span class="k">보냄 · EN</span><span class="v" lang="en">Yes, Friday works.</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a1">E</span><div><p class="person-name">Emma</p><p class="person-lang">내 언어: English</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">받음 · 日本語</span><span class="v" lang="ja">資料は明日までに送ります。</span></li>
+              <li><span class="k">보임</span><span class="v" lang="en">I'll send the materials by tomorrow.</span></li>
+              <li class="mine"><span class="k">입력</span><span class="v" lang="en">Thanks, no rush.</span></li>
+              <li class="out"><span class="k">보냄 · 日本語</span><span class="v" lang="ja">ありがとうございます。急ぎませんので。</span></li>
+            </ol>
+          </li>
+          <li class="person">
+            <div class="person-head"><span class="avatar a3">J</span><div><p class="person-name">지우</p><p class="person-lang">내 언어: 한국어</p></div></div>
+            <ol class="flow-list">
+              <li><span class="k">받음 · 中文</span><span class="v" lang="zh-CN">下周一的评审改到下午三点。</span></li>
+              <li><span class="k">보임</span><span class="v">다음 주 월요일 리뷰가 오후 3시로 변경되었습니다.</span></li>
+              <li class="mine"><span class="k">입력</span><span class="v">알겠습니다, 참석할게요.</span></li>
+              <li class="out"><span class="k">보냄 · 中文</span><span class="v" lang="zh-CN">收到，我会参加。</span></li>
+            </ol>
+          </li>
+        </ul>
+        <p class="fineprint">선택한 텍스트가 이미 내 언어라면 「자주 쓰는 상대 언어」로 번역합니다. 한국어로 쓴 이메일을 한 번에 영어로 바꾸는 식입니다. 앱 화면도 시스템 언어에 맞춰 간체 중국어, English, 日本語, 한국어로 표시됩니다.</p>
+      </div>
+    </section>
+
+    <!-- 이유 -->
+    <section class="section section-alt" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">왜 Suiyi인가</p>
+          <h2 id="why-title">외국어 메시지에 답장하기,<br>예전엔 7단계, 이제는 3단계.</h2>
+        </div>
+        <div class="compare">
+          <div class="compare-col compare-before">
+            <h3>예전</h3>
+            <ol>
+              <li>원문 복사</li>
+              <li>번역 사이트로 이동해 붙여넣기</li>
+              <li>번역문을 읽고 답장 생각하기</li>
+              <li>한국어로 답장 쓰기</li>
+              <li>다시 붙여넣어 상대 언어로 번역</li>
+              <li>어색한 표현 고치기</li>
+              <li>복사해서 돌아와 보내기</li>
+            </ol>
+          </div>
+          <div class="compare-col compare-after">
+            <h3>Suiyi와 함께</h3>
+            <ol>
+              <li>원문을 선택하고 번역문 읽기</li>
+              <li>한국어로 답장을 쓰고 <kbd>⌘↩</kbd></li>
+              <li>복사해서 보내기</li>
+            </ol>
+            <p class="compare-note">지금 보고 있는 윈도우를 떠나지 않고.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">기능</p>
+          <h2 id="features-title">이해하고, 답장하고, 나답게.</h2>
+        </div>
+
+        <!-- 답장 -->
+        <article class="feature feature-wide">
+          <div class="feature-text">
+            <p class="tag">한 번에 답장</p>
+            <h3>상대는 상대의 언어로, 나는 한국어로.</h3>
+            <p>외국어 메시지는 한국어로 번역됩니다. 한국어로 답장을 쓰고 <kbd>⌘↩</kbd>를 누르면 상대방의 언어로 나옵니다. 영어에는 영어로, 일본어에는 일본어로.</p>
+          </div>
+          <div class="reply-flow" aria-label="한 번에 답장 예시">
+            <div class="rf-row"><span class="rf-lang">EN</span><p><span class="rf-label">상대</span><span lang="en">Can you send the deck before Thursday?</span></p></div>
+            <div class="rf-row"><span class="rf-lang">한</span><p><span class="rf-label">번역문</span>목요일 전에 발표 자료를 보내 줄 수 있나요?</p></div>
+            <div class="rf-row rf-me"><span class="rf-lang">한</span><p><span class="rf-label">입력</span>네, 수요일 저녁까지 보낼게요.</p></div>
+            <div class="rf-row rf-out"><span class="rf-lang">EN</span><p><span class="rf-label">보냄</span><span lang="en">Sure, I'll send it over by Wednesday evening.</span></p></div>
+          </div>
+        </article>
+
+        <div class="feature-grid">
+          <!-- 문맥 -->
+          <article class="feature">
+            <p class="tag">문맥 이해</p>
+            <h3>같은 말도 상황에 맞게.</h3>
+            <p>사용 중인 앱, 윈도우 제목, 선택한 부분 앞뒤의 문장을 참고해 번역합니다. 채팅의 편한 말투, 이메일의 정중한 표현, 문서의 전문 용어를 각각 알맞게.</p>
+            <div class="ctx" aria-label="문맥에 따른 번역 예시">
+              <p class="ctx-src">ship it Friday</p>
+              <div class="ctx-row"><span class="ctx-chip">문맥 없음</span><span class="ctx-bad">금요일에 발송하기</span></div>
+              <div class="ctx-row"><span class="ctx-chip ctx-on">Slack · #release</span><span class="ctx-good">금요일에 출시하기</span></div>
+            </div>
+          </article>
+
+          <!-- 다시 쓰기 -->
+          <article class="feature">
+            <p class="tag">다시 쓰기</p>
+            <h3>한 문장을 세 가지 톤으로.</h3>
+            <p>카드를 「다시 쓰기」 탭으로 바꾸거나 <kbd>⌥⌘R</kbd>를 누르면 같은 언어로 세 가지 버전을 제안합니다. 네 가지 언어 모두 가능하며, 편집할 수 있는 곳이라면 한 번에 바꿀 수 있습니다.</p>
+            <p class="rw-src">이 건 지금 어떻게 진행되고 있는지 여쭤봐도 될까요?</p>
+            <ul class="rewrite" aria-label="세 가지 다시 쓰기">
+              <li><span>간결하게</span>이 건 진행 상황은요?</li>
+              <li><span>격식 있게</span>해당 건의 진행 상황을 공유해 주실 수 있을까요?</li>
+              <li><span>편하게</span>그거 어떻게 돼가?</li>
+            </ul>
+          </article>
+
+          <!-- 스타일 -->
+          <article class="feature">
+            <p class="tag">나답게 <span class="badge">기본값 꺼짐</span></p>
+            <h3>어떤 언어의 답장도 내 말투로.</h3>
+            <p>켜면 기록을 바탕으로 스타일 프로필을 만들어 답장을 평소 말투와 길이에 맞춥니다. 파일은 Mac 안에만 저장됩니다.</p>
+            <div class="files" aria-label="로컬 파일">
+              <code>~/.suiyi/history.jsonl</code>
+              <code>~/.suiyi/profile.md</code>
+            </div>
+            <p class="agents-note">Codex와 Claude Code도 같은 프로필을 읽을 수 있어, 대신 쓰는 글도 나답게.</p>
+            <div class="agents"><span>Codex</span><span>Claude Code</span></div>
+          </article>
+
+          <!-- 네이티브 -->
+          <article class="feature">
+            <p class="tag">macOS 네이티브</p>
+            <h3>원래 있던 기능처럼.</h3>
+            <p>메뉴 막대에 있고 Dock에는 나타나지 않습니다. 카드는 시스템의 반투명 재질을 쓰며 라이트·다크 모드와 시스템 언어를 따릅니다. Esc를 누르거나 바깥을 클릭하면 닫힙니다.</p>
+            <div class="glass-duo" aria-hidden="true">
+              <div class="glass-sample gs-light"><div class="gs-card"><i></i><i></i><i></i></div></div>
+              <div class="glass-sample gs-dark"><div class="gs-card"><i></i><i></i><i></i></div></div>
+            </div>
+            <ul class="keys" aria-label="단축키">
+              <li><kbd>⌥⌘T</kbd> 번역</li>
+              <li><kbd>⌥⌘R</kbd> 다시 쓰기</li>
+              <li><kbd>⌘↩</kbd> 답장 번역</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 개인정보 -->
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">개인정보</p>
+          <h2 id="privacy-title">텍스트는 내가 정한 곳으로만.</h2>
+          <p class="section-sub">Suiyi는 자체 서버가 없습니다. 요청은 직접 설정한 모델 API로만 전송됩니다.</p>
+        </div>
+        <ul class="privacy">
+          <li><h3>원격 분석 없음</h3><p>어떤 통계도 수집하지 않습니다. 기본적으로 선택한 텍스트를 디스크에 저장하지 않습니다.</p></li>
+          <li><h3>키는 키체인에</h3><p>API 키는 macOS 키체인에 저장됩니다. 엔드포인트와 모델은 직접 정합니다.</p></li>
+          <li><h3>완전 로컬도 가능</h3><p>로컬 Ollama에 연결하면 요청이 Mac 밖으로 나가지 않습니다.</p></li>
+          <li><h3>민감한 곳에서는 동작하지 않음</h3><p>비밀번호 앱, 비밀번호 칸, 보안 입력 중에는 표시되지 않습니다. 비밀번호나 키, 카드 번호처럼 보이는 선택은 한 번 더 확인한 뒤에 보냅니다. 앱별로 제외할 수도 있습니다.</p></li>
+        </ul>
+        <p class="fineprint">정확히 말하면: 번역할 때 선택한 텍스트, 앱 이름, 윈도우 제목, 주변 문장이 설정한 API로 전송됩니다. 선택한 텍스트를 가져올 수 없는 앱에서는 클립보드를 한 번 읽고 바로 되돌립니다. 「나답게」를 켜면 스타일 프로필도 답장 요청과 함께 전송됩니다. 메뉴의 「업데이트 확인」은 클릭했을 때만 이 사이트의 버전 정보를 읽습니다.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">사용하기 전에 알아 두면 좋은 것.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>어떤 언어를 지원하나요?</summary>
+            <p>한국어·중국어·영어·일본어를 어떤 조합으로든 번역합니다. 설정에서 「내 언어」를 고르면 외국어는 내 언어로, 내 언어는 「자주 쓰는 상대 언어」로 번역하고, 답장은 상대방의 언어로 돌려보냅니다. 프랑스어 등 다른 언어도 내 언어로 번역할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>앱은 어떤 언어로 표시되나요?</summary>
+            <p>macOS 언어에 맞춰 간체 중국어, English, 日本語, 한국어로 표시됩니다. 그 밖의 시스템 언어에서는 영어로 표시됩니다.</p>
+          </details>
+          <details>
+            <summary>API 키가 따로 필요한가요?</summary>
+            <p>네. OpenAI 호환 API라면 무엇이든 쓸 수 있습니다. 기본값은 DeepSeek이며 OpenAI, OpenRouter, 로컬 Ollama도 가능합니다. 요금은 각 제공업체의 사용량 기준입니다.</p>
+          </details>
+          <details>
+            <summary>왜 손쉬운 사용 권한이 필요한가요?</summary>
+            <p>선택한 텍스트를 읽고 다시 쓴 결과로 바꾸려면 이 macOS 권한이 필요합니다. 권한이 없으면 Suiyi가 동작하지 않습니다.</p>
+          </details>
+          <details>
+            <summary>텍스트가 저장되나요?</summary>
+            <p>기본적으로 저장하지 않습니다. 「나답게」를 켠 경우에만 기록과 스타일 프로필을 Mac의 <code>~/.suiyi</code>에 저장하며 언제든 삭제할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>어떤 앱에서 쓸 수 있나요?</summary>
+            <p>텍스트를 선택할 수 있는 대부분의 앱에서 쓸 수 있습니다. 브라우저, Slack, Teams, 메일 등. 터미널과 코드 편집기는 키가 자주 표시되므로 기본값이 꺼짐이며, 필요하면 설정 › 보안에서 켤 수 있습니다. 쓰고 싶지 않은 앱은 설정에서 제외할 수 있습니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 받기 -->
+    <section class="section section-alt get" id="get" aria-labelledby="get-title">
+      <div class="container get-inner">
+        <img class="get-icon" src="../assets/icon-512.png" width="80" height="80" alt="Suiyi 앱 아이콘">
+        <h2 id="get-title">Suiyi 받기</h2>
+        <p class="section-sub">다운로드한 뒤 아래 순서대로 설치하면 몇 분 안에 쓸 수 있습니다.</p>
+        <a class="btn btn-primary get-mail" href="https://github.com/mars16881688/fanyi-site/releases/latest/download/Suiyi.zip">Suiyi 다운로드 (.zip)</a>
+        <p class="get-meta">버전 0.2.3 · macOS 13 이상 · <a href="https://github.com/mars16881688/fanyi-site/releases/latest">릴리스 노트</a></p>
+        <p class="get-meta">문의·피드백: <a href="https://github.com/mars16881688/fanyi-site/issues/new?template=feedback.md">GitHub에 이슈 등록</a> 또는 이메일 <a href="mailto:mars.yahui@gmail.com?subject=Suiyi%20feedback">mars.yahui@gmail.com</a>. 앱 메뉴의 「피드백 보내기…」로도 보낼 수 있습니다.</p>
+        <ul class="reqs" aria-label="요구 사항">
+          <li>macOS 13 이상</li>
+          <li>손쉬운 사용 권한</li>
+          <li>OpenAI 호환 API 키</li>
+        </ul>
+        <div class="install" id="install">
+          <h3>설치 방법</h3>
+          <p class="install-sub">zip을 받았다면 다음 5단계로 시작할 수 있습니다.</p>
+          <ol class="install-steps">
+            <li><span class="step-n">1</span><div><h4>응용 프로그램으로 이동</h4><p>압축을 풀고 <b>Suiyi.app</b>을 「응용 프로그램」 폴더로 드래그한 뒤 엽니다.</p></div></li>
+            <li><span class="step-n">2</span><div><h4>열기 허용</h4><p>"개발자를 확인할 수 없습니다"라는 메시지가 나오면 <b>시스템 설정 › 개인정보 보호 및 보안</b>을 열고 맨 아래에서 「그래도 열기」를 클릭한 뒤 확인합니다. 처음 한 번만 하면 됩니다.</p></div></li>
+            <li><span class="step-n">3</span><div><h4>손쉬운 사용 권한 허용</h4><p>안내에 따라 <b>시스템 설정 › 개인정보 보호 및 보안 › 손쉬운 사용</b>에서 Suiyi를 켜고, Suiyi를 종료했다가 다시 엽니다.</p></div></li>
+            <li><span class="step-n">4</span><div><h4>API 키 입력</h4><p>메뉴 막대의 Suiyi 아이콘 › 설정…에서 API 키를 입력하고(OpenAI 호환 API, 기본값 DeepSeek) 「연결 테스트」 후 「저장」을 클릭합니다.</p></div></li>
+            <li><span class="step-n">5</span><div><h4>내 언어 선택</h4><p>설정에서 「내 언어」를 선택합니다. 이후 어떤 앱에서든 텍스트를 선택하고 옆의 작은 버튼을 누르면 번역됩니다. <kbd>⌥⌘T</kbd>는 번역, <kbd>⌥⌘R</kbd>은 다시 쓰기입니다.</p></div></li>
+          </ol>
+          <p class="install-fallback">2단계에서 「그래도 열기」가 보이지 않으면 터미널에서 다음을 실행하세요:<br><code>xattr -dr com.apple.quarantine /Applications/Suiyi.app</code></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand brand-sm"><img src="../assets/favicon-64.png" width="20" height="20" alt="">Suiyi</span>
+      <span>macOS 네이티브 · 한국어·中文·English·日本語 · 원격 분석 없음</span>
+    </div>
+  </footer>
+</body>
+</html>
