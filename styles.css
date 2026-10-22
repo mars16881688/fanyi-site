@@ -122,7 +122,6 @@ kbd {
 .nav { display: flex; align-items: center; gap: 32px; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--ink); letter-spacing: -0.02em; }
 .brand img { border-radius: 7px; }
-.brand-cn { font-weight: 500; color: var(--muted); margin-left: 2px; }
 .nav-links { display: flex; gap: 28px; margin-left: auto; font-size: 15px; color: var(--muted); }
 .nav-links a { padding: 8px 0; }
 .nav-links a:hover { color: var(--ink); }
