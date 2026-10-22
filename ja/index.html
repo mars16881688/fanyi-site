@@ -67,7 +67,7 @@
           <div class="mac" id="demo" data-stage="4" role="img"
                data-status="デモ" data-static="イメージ" data-pause="一時停止" data-play="再生"
                data-pause-label="デモを一時停止" data-play-label="デモを再生"
-               data-stages="選択前|中国語の文を選択|Suiyi ボタンが表示|文脈をふまえて翻訳|完了"
+               data-stages="選択前|中国語の文を選択|Suiyi ボタンが表示|ワンクリックで翻訳|完了"
                aria-label="イメージ：Slack で中国語のメッセージを選択すると Suiyi のボタンが表示され、すりガラスのカードが #release チャンネルの文脈をふまえて「金曜日にリリースしましょう。変更履歴は短めに。」と翻訳します。">
             <div class="mac-bar" aria-hidden="true">
               <span class="lights"><i></i><i></i><i></i></span>
@@ -87,11 +87,11 @@
                 <div><p class="msg-name">Emma <time>10:45</time></p><p lang="en">Sounds good. I'll draft the notes.</p></div>
               </div>
 
-              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span><span>翻訳</span><span class="pill-sep"></span><span>書き換え</span></div>
+              <div class="pill"><span class="pill-mark"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3 3.5h10a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 13 11.5H8l-3 2.5v-2.5H3A1.5 1.5 0 0 1 1.5 10V5A1.5 1.5 0 0 1 3 3.5Z" fill="currentColor"/></svg></span></div>
 
               <div class="pop">
                 <div class="pop-head">
-                  <span class="pop-brand"><img src="../assets/favicon-64.png" width="16" height="16" alt="">中文 → 日本語</span>
+                  <span class="pop-tabs"><b>翻訳</b><span>書き換え</span></span>
                   <span class="pop-ctx">文脈：Slack · #release</span>
                 </div>
                 <p class="pop-src" lang="zh-CN">周五上线吧，更新日志写短一点。</p>
@@ -222,7 +222,7 @@
           <article class="feature">
             <p class="tag">書き換え</p>
             <h3>ひとつの文を、3 つのトーンで。</h3>
-            <p>選択して「書き換え」をクリック、または <kbd>⌥⌘R</kbd>。同じ言語のまま 3 パターンを提案します。日中英どれでも OK。編集できる場所ならワンクリックで置き換え。</p>
+            <p>カードを「書き換え」タブに切り替えるか、<kbd>⌥⌘R</kbd>。同じ言語のまま 3 パターンを提案します。日中英どれでも OK。編集できる場所ならワンクリックで置き換え。</p>
             <p class="rw-src">この件、いまどうなっているか確認させていただきたいのですが。</p>
             <ul class="rewrite" aria-label="3 つの書き換え">
               <li><span>簡潔</span>この件、進捗はいかがですか？</li>
