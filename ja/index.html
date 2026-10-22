@@ -329,6 +329,18 @@
           <li>アクセシビリティの許可</li>
           <li>OpenAI 互換の API キー</li>
         </ul>
+        <div class="install" id="install">
+          <h3>インストール手順</h3>
+          <p class="install-sub">zip を受け取ったら、この 5 ステップで使い始められます。</p>
+          <ol class="install-steps">
+            <li><span class="step-n">1</span><div><h4>アプリケーションへ移動</h4><p>解凍した <b>Suiyi.app</b> を「アプリケーション」フォルダにドラッグして開きます。</p></div></li>
+            <li><span class="step-n">2</span><div><h4>開くことを許可</h4><p>「開発元を検証できません」と表示されたら、<b>システム設定 › プライバシーとセキュリティ</b> を開き、一番下の「このまま開く」をクリックして確認します。最初の一回だけです。</p></div></li>
+            <li><span class="step-n">3</span><div><h4>アクセシビリティを許可</h4><p>案内に従って <b>システム設定 › プライバシーとセキュリティ › アクセシビリティ</b> で Suiyi をオンにし、Suiyi をいったん終了してもう一度開きます。</p></div></li>
+            <li><span class="step-n">4</span><div><h4>API キーを入力</h4><p>メニューバーの Suiyi アイコン › 設定… で API キーを入力し（OpenAI 互換の API。既定は DeepSeek）、「接続テスト」のあと「保存」をクリックします。</p></div></li>
+            <li><span class="step-n">5</span><div><h4>自分の言語を選ぶ</h4><p>設定で「自分の言語」を選びます。あとはどのアプリでもテキストを選択し、横の小さなボタンで翻訳できます。<kbd>⌥⌘T</kbd> で翻訳、<kbd>⌥⌘R</kbd> で書き換え。</p></div></li>
+          </ol>
+          <p class="install-fallback">手順 2 で「このまま開く」が見つからない場合は、ターミナルで次を実行してください：<br><code>xattr -dr com.apple.quarantine /Applications/Suiyi.app</code></p>
+        </div>
       </div>
     </section>
   </main>
