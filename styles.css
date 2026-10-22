@@ -380,6 +380,16 @@ html[lang="ko"] { word-break: keep-all; }
 .install-fallback { margin-top: 20px; font-size: 14px; color: var(--muted); }
 .install-fallback code { display: inline-block; margin-top: 6px; padding: 8px 12px; border-radius: 8px; background: var(--card); border: 1px solid var(--line); color: var(--ink); font-size: 13px; overflow-wrap: anywhere; }
 
+/* One more thing：Longbridge 指引 */
+.lb-guide .install-steps { max-width: 680px; margin-top: 0; }
+.lb-guide .install-steps a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.lb-fields { display: grid; gap: 6px; margin-top: 12px; }
+.lb-fields li { display: grid; grid-template-columns: 6.5em minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 8px 12px; border-radius: 10px; background: var(--bg-alt); border: 1px solid var(--line); font-size: 14px; }
+.lb-k { color: var(--muted); font-size: 13px; }
+.lb-v { color: var(--ink); overflow-wrap: anywhere; }
+.lb-v code { font-size: 13px; }
+.lb-guide .fineprint { margin-top: 20px; }
+
 /* 页脚 */
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0; font-size: 14px; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
@@ -400,6 +410,7 @@ html[lang="ko"] { word-break: keep-all; }
   .nav { gap: 16px; height: 56px; }
   .nav-links { display: none; }
   .lang-switch { margin-left: auto; }
+  .lb-fields li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .lang-switch a { padding: 3px 6px; }
   /* Four language labels need the room: the header keeps only the icon. */
   .nav > .brand span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
