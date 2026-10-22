@@ -170,7 +170,7 @@ kbd {
 .pill {
   position: absolute; left: 64px; top: 152px;
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 4px 12px 4px 4px; border-radius: 999px;
+  padding: 4px; border-radius: 999px;
   background: var(--glass); border: 1px solid var(--glass-line);
   -webkit-backdrop-filter: blur(18px) saturate(180%);
   backdrop-filter: blur(18px) saturate(180%);
@@ -193,6 +193,10 @@ kbd {
   transition: opacity .35s, transform .35s;
 }
 .pop-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 8px; font-size: 12px; color: var(--muted); }
+.pop-tabs { display: inline-flex; gap: 2px; align-items: center; }
+.pop-tabs b, .pop-tabs span { padding: 1px 9px; border-radius: 999px; line-height: 1.6; }
+.pop-tabs b { font-weight: 600; color: var(--ink); background: color-mix(in srgb, var(--win) 70%, transparent); border: 1px solid var(--line); }
+.pop-tabs span { color: var(--muted); }
 .pop-brand { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--ink); }
 .pop-brand img { border-radius: 4px; }
 .pop-ctx { padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 500; white-space: nowrap; }
