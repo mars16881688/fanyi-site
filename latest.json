@@ -1,12 +1,12 @@
 {
-  "version": "0.2.6",
-  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.6",
-  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.6/Suiyi.zip",
-  "sha256": "7c7daddb4178b76b8ba4b4c357a6363aa87e6f9f7220874328b0f896dce78855",
+  "version": "0.2.7",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.7",
+  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.7/Suiyi.zip",
+  "sha256": "a1762e2720457de368dfab7633deddc1a78e4c493516b2afeb3bde6c9dd95064",
   "notes": {
-    "zh": "回复参考对方原文和所在应用，更像你自己写的；选区按钮右键可复制原文；设置保存后自动关闭。感谢 Kimi 贡献。",
-    "en": "Replies use the whole message and the app you're in, so they read like you wrote them; right-click the selection button to copy; Settings close after saving. Thanks to Kimi.",
-    "ja": "返信は相手のメッセージ全文とアプリに合わせ、より自分らしく；選択ボタンの右クリックでコピー；設定は保存後に自動で閉じます。Kimi さんに感謝。",
-    "ko": "답장이 상대 메시지 전체와 사용 중인 앱을 참고해 더 내가 쓴 것처럼; 선택 버튼 오른쪽 클릭으로 복사; 설정은 저장 후 자동으로 닫힙니다. Kimi 님께 감사합니다."
+    "zh": "修复选中后按 ⌘C 粘贴出大段旧文字的问题；划词时不再模拟按键，点了按钮才读取；拖窗口不出按钮；聊天应用不发窗口标题。感谢 Kimi 贡献。",
+    "en": "Fixed ⌘C right after selecting pasting older, longer text; no synthetic keys while selecting (text is read when you click); no button after moving a window; chat apps send no window title. Thanks to Kimi.",
+    "ja": "選択直後の ⌘C で以前の長いテキストが貼り付けられる問題を修正。選択時にキーを送らず、クリック時に読み取り。ウィンドウ移動でボタンを出さず、チャットアプリではタイトルを送りません。Kimi さんに感謝。",
+    "ko": "선택 직후 ⌘C로 예전의 긴 텍스트가 붙여 넣어지던 문제 수정. 선택할 때 키를 보내지 않고 누를 때 읽음. 윈도우를 옮길 때 버튼 없음, 채팅 앱은 제목을 보내지 않음. Kimi 님께 감사합니다."
   }
 }
