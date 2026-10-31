@@ -1,12 +1,12 @@
 {
-  "version": "0.2.7",
-  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.7",
-  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.7/Suiyi.zip",
-  "sha256": "a1762e2720457de368dfab7633deddc1a78e4c493516b2afeb3bde6c9dd95064",
+  "version": "0.2.8",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.8",
+  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.8/Suiyi.zip",
+  "sha256": "5fd26b378d2bb8261204c9c3eada12765df4637ba7984c8d42d2624a8a81b175",
   "notes": {
-    "zh": "修复选中后按 ⌘C 粘贴出大段旧文字的问题；划词时不再模拟按键，点了按钮才读取；拖窗口不出按钮；聊天应用不发窗口标题。感谢 Kimi 贡献。",
-    "en": "Fixed ⌘C right after selecting pasting older, longer text; no synthetic keys while selecting (text is read when you click); no button after moving a window; chat apps send no window title. Thanks to Kimi.",
-    "ja": "選択直後の ⌘C で以前の長いテキストが貼り付けられる問題を修正。選択時にキーを送らず、クリック時に読み取り。ウィンドウ移動でボタンを出さず、チャットアプリではタイトルを送りません。Kimi さんに感謝。",
-    "ko": "선택 직후 ⌘C로 예전의 긴 텍스트가 붙여 넣어지던 문제 수정. 선택할 때 키를 보내지 않고 누를 때 읽음. 윈도우를 옮길 때 버튼 없음, 채팅 앱은 제목을 보내지 않음. Kimi 님께 감사합니다."
+    "zh": "新增划词发音：选中外文按 ⌥⌘P 朗读并给出读法（中文拼音、日文假名与罗马字、韩文罗马字、英文 IPA）；发音卡片可再读一遍。",
+    "en": "New pronunciation: select foreign text and press ⌥⌘P to hear it and see how to read it (pinyin, kana and romaji, Korean romanization, English IPA). The card can read it again.",
+    "ja": "划語発音を追加：外国語を選択して ⌥⌘P を押すと読み上げと読み方（ピンイン、かな・ローマ字、韓国語のローマ字、英語の IPA）を表示。カードから再読み上げできます。",
+    "ko": "划词 발음 추가: 외국어를 선택하고 ⌥⌘P를 누르면 읽어 주고 읽는 법(병음, 가나·로마자, 한글 로마자, 영어 IPA)을 보여 줍니다. 카드에서 다시 읽을 수 있습니다."
   }
 }
