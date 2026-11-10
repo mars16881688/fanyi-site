@@ -1,12 +1,12 @@
 {
-  "version": "0.2.8",
-  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.8",
-  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.8/Suiyi.zip",
-  "sha256": "5fd26b378d2bb8261204c9c3eada12765df4637ba7984c8d42d2624a8a81b175",
+  "version": "0.2.9",
+  "url": "https://github.com/mars16881688/fanyi-site/releases/tag/v0.2.9",
+  "download": "https://github.com/mars16881688/fanyi-site/releases/download/v0.2.9/Suiyi.zip",
+  "sha256": "7dce675aafe3c47654ed6eee74684007034d8b9b2dfb7159022539d8a3dcb4e7",
   "notes": {
-    "zh": "新增划词发音：选中外文按 ⌥⌘P 朗读并给出读法（中文拼音、日文假名与罗马字、韩文罗马字、英文 IPA）；发音卡片可再读一遍。",
-    "en": "New pronunciation: select foreign text and press ⌥⌘P to hear it and see how to read it (pinyin, kana and romaji, Korean romanization, English IPA). The card can read it again.",
-    "ja": "划語発音を追加：外国語を選択して ⌥⌘P を押すと読み上げと読み方（ピンイン、かな・ローマ字、韓国語のローマ字、英語の IPA）を表示。カードから再読み上げできます。",
-    "ko": "划词 발음 추가: 외국어를 선택하고 ⌥⌘P를 누르면 읽어 주고 읽는 법(병음, 가나·로마자, 한글 로마자, 영어 IPA)을 보여 줍니다. 카드에서 다시 읽을 수 있습니다."
+    "zh": "新增粤语翻译：选中的文字含「嘅、咗、唔、喺」等粤语用字时自动识别为粤语并译成普通话；「常用对外语言」可选粤语，中文译成香港粤语口语（繁体）。划词发音支持粤语（粤拼）。",
+    "en": "Cantonese is here: text with Cantonese words such as 嘅, 咗, 唔 or 喺 is recognised as Cantonese and translated into your language; choose Cantonese as your usual outgoing language to turn Chinese into colloquial Hong Kong Cantonese (Traditional characters). Pronunciation reads Cantonese with Jyutping.",
+    "ja": "広東語に対応：「嘅・咗・唔・喺」などの広東語の字を含む文を広東語として認識し、あなたの言語に翻訳します。「よく使う送信言語」に広東語を選ぶと、中国語を香港の口語広東語（繁体字）に翻訳します。発音は粤拼（Jyutping）で表示します。",
+    "ko": "광둥어 지원: 「嘅·咗·唔·喺」 같은 광둥어 글자가 들어간 글을 광둥어로 인식해 내 언어로 번역합니다. 「자주 쓰는 보낼 언어」를 광둥어로 고르면 중국어를 홍콩 구어 광둥어(번체)로 번역합니다. 발음은 월병(Jyutping)으로 보여 줍니다."
   }
 }
