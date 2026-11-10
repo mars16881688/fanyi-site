@@ -7,6 +7,6 @@
     "zh": "新增粤语翻译：选中的文字含「嘅、咗、唔、喺」等粤语用字时自动识别为粤语并译成普通话；「常用对外语言」可选粤语，中文译成香港粤语口语（繁体）。划词发音支持粤语（粤拼）。",
     "en": "Cantonese is here: text with Cantonese words such as 嘅, 咗, 唔 or 喺 is recognised as Cantonese and translated into your language; choose Cantonese as your usual outgoing language to turn Chinese into colloquial Hong Kong Cantonese (Traditional characters). Pronunciation reads Cantonese with Jyutping.",
     "ja": "広東語に対応：「嘅・咗・唔・喺」などの広東語の字を含む文を広東語として認識し、あなたの言語に翻訳します。「よく使う送信言語」に広東語を選ぶと、中国語を香港の口語広東語（繁体字）に翻訳します。発音は粤拼（Jyutping）で表示します。",
-    "ko": "광둥어 지원: 「嘅·咗·唔·喺」 같은 광둥어 글자가 들어간 글을 광둥어로 인식해 내 언어로 번역합니다. 「자주 쓰는 보낼 언어」를 광둥어로 고르면 중국어를 홍콩 구어 광둥어(번체)로 번역합니다. 발음은 월병(Jyutping)으로 보여 줍니다."
+    "ko": "광둥어 지원: 「嘅·咗·唔·喺」 같은 광둥어 글자가 들어간 글을 광둥어로 인식해 내 언어로 번역합니다. 「자주 쓰는 보낼 언어」를 광둥어로 고르면 중국어를 홍콩 구어 광둥어(번체)로 번역합니다. 발음은 Jyutping(광둥어 로마자)으로 보여 줍니다."
   }
 }
