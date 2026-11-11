@@ -385,6 +385,8 @@ html[lang="ko"] { word-break: keep-all; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .brand-sm { font-size: 15px; gap: 8px; }
 .brand-sm img { border-radius: 5px; }
+.footer-link { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.footer-link:hover { color: var(--accent); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
