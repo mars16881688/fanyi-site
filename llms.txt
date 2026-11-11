@@ -1,0 +1,29 @@
+# Suiyi (随译)
+
+> Suiyi is a free, open-source (MIT) menu bar translator for macOS 13 and later. Select text in any app and it is translated in place; write a reply in your own language and Suiyi writes it in the sender's language. It translates any pair of Chinese, English, Japanese, Korean and Cantonese.
+
+Key facts:
+
+- Price: free. There is no paid tier, account or subscription.
+- Source code: https://github.com/mars16881688/fanyi (Swift/AppKit, MIT license).
+- Model: Suiyi does not include a translation service. The user enters their own API key for any OpenAI-compatible endpoint (DeepSeek by default).
+- Privacy: no telemetry or analytics. Requests go only to the endpoint the user configures. The API key is stored in the macOS Keychain. History and the style profile are off by default and stay on the Mac.
+- Languages translated: Chinese, English, Japanese, Korean, Cantonese (colloquial Hong Kong Cantonese in Traditional characters), any pair. Other languages can be translated into the user's language.
+- Interface languages: Simplified Chinese, English, Japanese, Korean.
+- Shortcuts: ⌥⌘T translate, ⌥⌘R rewrite (three versions in the same language), ⌥⌘P pronunciation (pinyin, kana and romaji, Korean romanization, Jyutping, IPA).
+- Install: the app is signed locally and not notarized by Apple, so the first launch needs "Open Anyway" in System Settings › Privacy & Security. It needs Accessibility access to read selected text. Updates install from inside the app after a SHA-256 and code-signature check.
+- Formerly named Fanyi.
+
+## Pages
+
+- [Home (Chinese)](https://mars16881688.github.io/fanyi-site/): features, privacy, FAQ, install steps
+- [Home (English)](https://mars16881688.github.io/fanyi-site/en/)
+- [Home (Japanese)](https://mars16881688.github.io/fanyi-site/ja/)
+- [Home (Korean)](https://mars16881688.github.io/fanyi-site/ko/)
+
+## Source and downloads
+
+- [Source code and full documentation](https://github.com/mars16881688/fanyi)
+- [English README](https://github.com/mars16881688/fanyi/blob/main/README.en.md)
+- [Latest release](https://github.com/mars16881688/fanyi-site/releases/latest)
+- [Report a problem](https://github.com/mars16881688/fanyi-site/issues)
